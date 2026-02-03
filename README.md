@@ -1,5 +1,12 @@
 # 🦞 ZoidbergBot — Personal AI Assistant
 
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/c8bf4cce-681f-477f-b26f-262759611603"
+         alt="zoidberg" width="512" height="768">
+</p>
+
+
+
 > **ZoidbergBot** is a themed flavor of [ClawdBot](https://github.com/zoidbergbot/zoidbergbot) (also known as ZoidbergBot/MoltBot). Same codebase, same features, different name and branding. Why not Zoidberg?
 
 <p align="center">
