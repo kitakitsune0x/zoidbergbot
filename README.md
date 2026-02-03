@@ -183,7 +183,7 @@ Run `zoidbergbot doctor` to surface risky/misconfigured DM policies.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=openclaw/zoidbergbot&type=date&legend=top-left)](https://www.star-history.com/#openclaw/zoidbergbot&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=openclaw/zoidbergbot,kitakitsune0x/zoidbergbot&type=date&legend=top-left)](https://www.star-history.com/#openclaw/zoidbergbot&kitakitsune0x/zoidbergbot&type=date&legend=top-left)
 
 ## Everything we built so far
 
@@ -194,11 +194,6 @@ Run `zoidbergbot doctor` to surface risky/misconfigured DM policies.
 - [Pi agent runtime](https://docs.zoidbergbot.ai/concepts/agent) in RPC mode with tool streaming and block streaming.
 - [Session model](https://docs.zoidbergbot.ai/concepts/session): `main` for direct chats, group isolation, activation modes, queue modes, reply-back. Group rules: [Groups](https://docs.zoidbergbot.ai/concepts/groups).
 - [Media pipeline](https://docs.zoidbergbot.ai/nodes/images): images/audio/video, transcription hooks, size caps, temp file lifecycle. Audio details: [Audio](https://docs.zoidbergbot.ai/nodes/audio).
-
-### Channels
-
-- [Channels](https://docs.zoidbergbot.ai/channels): [WhatsApp](https://docs.zoidbergbot.ai/channels/whatsapp) (Baileys), [Telegram](https://docs.zoidbergbot.ai/channels/telegram) (grammY), [Slack](https://docs.zoidbergbot.ai/channels/slack) (Bolt), [Discord](https://docs.zoidbergbot.ai/channels/discord) (discord.js), [Google Chat](https://docs.zoidbergbot.ai/channels/googlechat) (Chat API), [Signal](https://docs.zoidbergbot.ai/channels/signal) (signal-cli), [iMessage](https://docs.zoidbergbot.ai/channels/imessage) (imsg), [BlueBubbles](https://docs.zoidbergbot.ai/channels/bluebubbles) (extension), [Microsoft Teams](https://docs.zoidbergbot.ai/channels/msteams) (extension), [Matrix](https://docs.zoidbergbot.ai/channels/matrix) (extension), [Zalo](https://docs.zoidbergbot.ai/channels/zalo) (extension), [Zalo Personal](https://docs.zoidbergbot.ai/channels/zalouser) (extension), [WebChat](https://docs.zoidbergbot.ai/web/webchat).
-- [Group routing](https://docs.zoidbergbot.ai/concepts/group-messages): mention gating, reply tags, per-channel chunking and routing. Channel rules: [Channels](https://docs.zoidbergbot.ai/channels).
 
 ### Apps + nodes
 
