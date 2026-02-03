@@ -5,69 +5,113 @@
          alt="zoidberg" width="512" height="768">
 </p>
 
-
-
-> **ZoidbergBot** is a themed flavor of [ClawdBot](https://github.com/zoidbergbot/zoidbergbot) (also known as ZoidbergBot/MoltBot). Same codebase, same features, different name and branding. Why not Zoidberg?
-
 <p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zoidbergbot/zoidbergbot/main/docs/assets/zoidbergbot-logo-text-dark.png">
-        <img src="https://raw.githubusercontent.com/zoidbergbot/zoidbergbot/main/docs/assets/zoidbergbot-logo-text.png" alt="ZoidbergBot" width="500">
-    </picture>
+  <strong>"Why not Zoidberg?"</strong>
 </p>
 
 <p align="center">
-  <strong>EXFOLIATE! EXFOLIATE!</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/zoidbergbot/zoidbergbot/actions/workflows/ci.yml?branch=main"><img src="https://img.shields.io/github/actions/workflow/status/zoidbergbot/zoidbergbot/ci.yml?branch=main&style=for-the-badge" alt="CI status"></a>
-  <a href="https://github.com/zoidbergbot/zoidbergbot/releases"><img src="https://img.shields.io/github/v/release/zoidbergbot/zoidbergbot?include_prereleases&style=for-the-badge" alt="GitHub release"></a>
-  <a href="https://discord.gg/clawd"><img src="https://img.shields.io/discord/1456350064065904867?label=Discord&logo=discord&logoColor=white&color=5865F2&style=for-the-badge" alt="Discord"></a>
+  <a href="https://github.com/kitakitsune0x/zoidbergbot/actions/workflows/ci.yml?branch=main"><img src="https://img.shields.io/github/actions/workflow/status/kitakitsune0x/zoidbergbot/ci.yml?branch=main&style=for-the-badge" alt="CI status"></a>
+  <a href="https://github.com/kitakitsune0x/zoidbergbot/releases"><img src="https://img.shields.io/github/v/release/kitakitsune0x/zoidbergbot?include_prereleases&style=for-the-badge" alt="GitHub release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
 </p>
+
+---
+
+## What is ZoidbergBot?
+
+**ZoidbergBot** is a **preconfigured, batteries-included flavor** of [ClawdBot/OpenClaw](https://github.com/openclaw/openclaw) — the powerful open-source personal AI assistant. We took everything great about ClawdBot and made it dead simple to get running.
+
+### Why ZoidbergBot?
+
+Let's be honest: setting up a self-hosted AI assistant can be intimidating. Config files, API keys, plugins, services... it's a lot. ZoidbergBot exists because **everyone deserves a personal AI assistant**, not just developers and power users.
+
+> *"You want an AI assistant but you're not a tech wizard? Why not Zoidberg?"*
+
+### What makes it different?
+
+| Feature | ClawdBot (upstream) | ZoidbergBot |
+|---------|---------------------|-------------|
+| Target audience | Developers, tinkerers | Everyone |
+| Skills/plugins | Install yourself | **Pre-configured** |
+| Default config | Minimal | **Sensible defaults** |
+| Setup experience | Flexible but manual | **Guided & safe** |
+| Philosophy | Maximum control | **It just works** |
+
+### Batteries Included
+
+ZoidbergBot comes with **essential skills pre-installed and configured**:
+
+- **Web browsing** — search the internet, read articles, fetch live data
+- **File management** — read, write, organize your documents  
+- **Code execution** — run scripts in a sandboxed environment
+- **Calendar & reminders** — never miss an appointment
+- **Notes & memory** — your assistant remembers what matters
+- **And more...** — all the tools you need, ready to go
+
+No hunting for plugins. No compatibility issues. No "why isn't this working?" moments.
+
+---
+
+## The Vision
+
+ZoidbergBot is built on a simple belief: **AI should be accessible to everyone**.
+
+Not everyone has time to learn Docker, debug config files, or read through documentation. Some people just want to message their AI on WhatsApp and have it actually help them — schedule meetings, answer questions, manage their digital life.
+
+That's ZoidbergBot. It's ClawdBot for the rest of us.
+
+We stay synced with upstream OpenClaw, so you get all the latest features and security fixes. But we wrap it in a package that prioritizes the smoothest, safest install experience possible.
+
+---
+
+## What can it do?
 
 **ZoidbergBot** is a _personal AI assistant_ you run on your own devices.
 It answers you on the channels you already use (WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, Microsoft Teams, WebChat), plus extension channels like BlueBubbles, Matrix, Zalo, and Zalo Personal. It can speak and listen on macOS/iOS/Android, and can render a live Canvas you control. The Gateway is just the control plane — the product is the assistant.
 
 If you want a personal, single-user assistant that feels local, fast, and always-on, this is it.
 
-[Website](https://zoidbergbot.ai) · [Docs](https://docs.zoidbergbot.ai) · [DeepWiki](https://deepwiki.com/zoidbergbot/zoidbergbot) · [Getting Started](https://docs.zoidbergbot.ai/start/getting-started) · [Updating](https://docs.zoidbergbot.ai/install/updating) · [Showcase](https://docs.zoidbergbot.ai/start/showcase) · [FAQ](https://docs.zoidbergbot.ai/start/faq) · [Wizard](https://docs.zoidbergbot.ai/start/wizard) · [Nix](https://github.com/zoidbergbot/nix-clawdbot) · [Docker](https://docs.zoidbergbot.ai/install/docker) · [Discord](https://discord.gg/clawd)
+**Resources:** [Upstream Docs](https://docs.openclaw.ai) · [Getting Started](https://docs.openclaw.ai/start/getting-started) · [FAQ](https://docs.openclaw.ai/start/faq) · [Discord](https://discord.gg/clawd)
 
-Preferred setup: run the onboarding wizard (`zoidbergbot onboard`). It walks through gateway, workspace, channels, and skills. The CLI wizard is the recommended path and works on **macOS, Linux, and Windows (via WSL2; strongly recommended)**.
-Works with npm, pnpm, or bun.
-New install? Start here: [Getting started](https://docs.zoidbergbot.ai/start/getting-started)
+---
 
-**Subscriptions (OAuth):**
+## Install
 
-- **[Anthropic](https://www.anthropic.com/)** (Claude Pro/Max)
-- **[OpenAI](https://openai.com/)** (ChatGPT/Codex)
+### Requirements
 
-Model note: while any model is supported, I strongly recommend **Anthropic Pro/Max (100/200) + Opus 4.5** for long‑context strength and better prompt‑injection resistance. See [Onboarding](https://docs.zoidbergbot.ai/start/onboarding).
+- **Node.js 22+** (that's it!)
 
-## Models (selection + auth)
-
-- Models config + CLI: [Models](https://docs.zoidbergbot.ai/concepts/models)
-- Auth profile rotation (OAuth vs API keys) + fallbacks: [Model failover](https://docs.zoidbergbot.ai/concepts/model-failover)
-
-## Install (recommended)
-
-Runtime: **Node ≥22**.
+### One-liner setup
 
 ```bash
+# Install ZoidbergBot globally
 npm install -g zoidbergbot@latest
-# or: pnpm add -g zoidbergbot@latest
 
+# Run the friendly setup wizard
 zoidbergbot onboard --install-daemon
 ```
 
-The wizard installs the Gateway daemon (launchd/systemd user service) so it stays running.
+The wizard will walk you through:
+1. Connecting your AI provider (Anthropic Claude recommended)
+2. Setting up your messaging channels (WhatsApp, Telegram, etc.)
+3. Installing the background service so it's always running
 
-## Quick start (TL;DR)
+**That's it.** No config files to edit. No Docker to learn. Just answer the prompts.
 
-Runtime: **Node ≥22**.
+### Supported AI Providers
 
-Full beginner guide (auth, pairing, channels): [Getting started](https://docs.zoidbergbot.ai/start/getting-started)
+| Provider | Recommended Plan | Why |
+|----------|------------------|-----|
+| **[Anthropic](https://www.anthropic.com/)** | Claude Pro/Max | Best reasoning, safety, and long-context handling |
+| **[OpenAI](https://openai.com/)** | ChatGPT Plus | Great all-rounder, wide compatibility |
+
+> **Tip:** We recommend **Anthropic Claude** for the best experience. It handles complex tasks better and is more resistant to prompt injection attacks.
+
+---
+
+## Quick Start
+
+After install, here's what you can do:
 
 ```bash
 zoidbergbot onboard --install-daemon
