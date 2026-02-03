@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # ZoidbergBot Installer for macOS and Linux
-# Usage: curl -fsSL --proto '=https' --tlsv1.2 https://zoidbergbot.ai/install.sh | bash
+# Usage: curl -fsSL https://zoidberg.bot/install.sh | bash
 
 BOLD='\033[1m'
 ACCENT='\033[38;2;255;90;45m'
@@ -336,7 +336,7 @@ print_usage() {
 ZoidbergBot installer (macOS + Linux)
 
 Usage:
-  curl -fsSL --proto '=https' --tlsv1.2 https://zoidbergbot.ai/install.sh | bash -s -- [options]
+  curl -fsSL https://zoidberg.bot/install.sh | bash -s -- [options]
 
 Options:
   --install-method, --method npm|git   Install via npm (default) or from a git checkout
@@ -366,9 +366,9 @@ Environment variables:
   SHARP_IGNORE_GLOBAL_LIBVIPS=0|1    Default: 1 (avoid sharp building against global libvips)
 
 Examples:
-  curl -fsSL --proto '=https' --tlsv1.2 https://zoidbergbot.ai/install.sh | bash
-  curl -fsSL --proto '=https' --tlsv1.2 https://zoidbergbot.ai/install.sh | bash -s -- --no-onboard
-  curl -fsSL --proto '=https' --tlsv1.2 https://zoidbergbot.ai/install.sh | bash -s -- --install-method git --no-onboard
+  curl -fsSL https://zoidberg.bot/install.sh | bash
+  curl -fsSL https://zoidberg.bot/install.sh | bash -s -- --no-onboard
+  curl -fsSL https://zoidberg.bot/install.sh | bash -s -- --install-method git --no-onboard
 EOF
 }
 
@@ -497,7 +497,7 @@ fi
 if [[ "$OS" == "unknown" ]]; then
     echo -e "${ERROR}Error: Unsupported operating system${NC}"
     echo "This installer supports macOS and Linux (including WSL)."
-    echo "For Windows, use: iwr -useb https://zoidbergbot.ai/install.ps1 | iex"
+    echo "For Windows, use: iwr -useb https://zoidberg.bot/install.ps1 | iex"
     exit 1
 fi
 
@@ -802,7 +802,7 @@ warn_shell_path_missing_dir() {
     echo -e "This can make ${INFO}zoidbergbot${NC} show as \"command not found\" in new terminals."
     echo -e "Fix (zsh: ~/.zshrc, bash: ~/.bashrc):"
     echo -e "  export PATH=\"${dir}:\\$PATH\""
-    echo -e "Docs: ${INFO}https://docs.zoidbergbot.ai/install#nodejs--npm-path-sanity${NC}"
+    echo -e "Docs: ${INFO}https://docs.zoidberg.bot/install#nodejs--npm-path-sanity${NC}"
 }
 
 ensure_npm_global_bin_on_path() {
@@ -822,7 +822,7 @@ maybe_nodenv_rehash() {
 warn_zoidbergbot_not_found() {
     echo -e "${WARN}→${NC} Installed, but ${INFO}zoidbergbot${NC} is not discoverable on PATH in this shell."
     echo -e "Try: ${INFO}hash -r${NC} (bash) or ${INFO}rehash${NC} (zsh), then retry."
-    echo -e "Docs: ${INFO}https://docs.zoidbergbot.ai/install#nodejs--npm-path-sanity${NC}"
+    echo -e "Docs: ${INFO}https://docs.zoidberg.bot/install#nodejs--npm-path-sanity${NC}"
     local t=""
     t="$(type -t zoidbergbot 2>/dev/null || true)"
     if [[ "$t" == "alias" || "$t" == "function" ]]; then
@@ -1320,7 +1320,7 @@ EOF
         echo -e "Source checkout: ${INFO}${final_git_dir}${NC}"
         echo -e "Wrapper: ${INFO}\$HOME/.local/bin/zoidbergbot${NC}"
         echo -e "Installed from source. To update later, run: ${INFO}zoidbergbot update --restart${NC}"
-        echo -e "Switch to global install later: ${INFO}curl -fsSL --proto '=https' --tlsv1.2 https://zoidbergbot.ai/install.sh | bash -s -- --install-method npm${NC}"
+        echo -e "Switch to global install later: ${INFO}curl -fsSL https://zoidberg.bot/install.sh | bash -s -- --install-method npm${NC}"
     elif [[ "$is_upgrade" == "true" ]]; then
         echo -e "Upgrade complete."
         if [[ -r /dev/tty && -w /dev/tty ]]; then
@@ -1413,7 +1413,7 @@ EOF
     fi
 
     echo ""
-    echo -e "FAQ: ${INFO}https://docs.zoidbergbot.ai/start/faq${NC}"
+    echo -e "FAQ: ${INFO}https://docs.zoidberg.bot/start/faq${NC}"
 }
 
 if [[ "${ZOIDBERGBOT_INSTALL_SH_NO_RUN:-0}" != "1" ]]; then
