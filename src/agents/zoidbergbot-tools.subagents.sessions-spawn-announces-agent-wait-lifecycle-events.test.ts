@@ -22,6 +22,7 @@ vi.mock("../config/config.js", async (importOriginal) => {
 });
 
 import "./test-helpers/fast-core-tools.js";
+import { sleep } from "../utils.js";
 import { resetSubagentRegistryForTests } from "./subagent-registry.js";
 import { createZoidbergBotTools } from "./zoidbergbot-tools.js";
 
@@ -107,9 +108,9 @@ describe("zoidbergbot-tools: subagents", () => {
       runId: "run-1",
     });
 
-    await new Promise((resolve) => setTimeout(resolve, 0));
-    await new Promise((resolve) => setTimeout(resolve, 0));
-    await new Promise((resolve) => setTimeout(resolve, 0));
+    await sleep(0);
+    await sleep(0);
+    await sleep(0);
 
     const childWait = waitCalls.find((call) => call.runId === childRunId);
     expect(childWait?.timeoutMs).toBe(1000);

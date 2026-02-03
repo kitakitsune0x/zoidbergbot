@@ -6,6 +6,9 @@ cd /repo
 export ZOIDBERGBOT_STATE_DIR="/tmp/zoidbergbot-test"
 export ZOIDBERGBOT_CONFIG_PATH="${ZOIDBERGBOT_STATE_DIR}/zoidbergbot.json"
 
+echo "==> Build"
+pnpm build
+
 echo "==> Seed state"
 mkdir -p "${ZOIDBERGBOT_STATE_DIR}/credentials"
 mkdir -p "${ZOIDBERGBOT_STATE_DIR}/agents/main/sessions"

@@ -41,9 +41,9 @@ When the operator says “release”, immediately do this preflight (no extra qu
 
 4. **Validation**
 
-- [ ] `pnpm lint`
+- [ ] `pnpm build`
+- [ ] `pnpm check`
 - [ ] `pnpm test` (or `pnpm test:coverage` if you need coverage output)
-- [ ] `pnpm run build` (last sanity check after tests)
 - [ ] `pnpm release:check` (verifies npm pack contents)
 - [ ] `ZOIDBERGBOT_INSTALL_SMOKE_SKIP_NONROOT=1 pnpm test:install:smoke` (Docker install smoke test, fast path; required before release)
   - If the immediate previous npm release is known broken, set `ZOIDBERGBOT_INSTALL_SMOKE_PREVIOUS=<last-good-version>` or `ZOIDBERGBOT_INSTALL_SMOKE_SKIP_PREVIOUS=1` for the preinstall step.

@@ -280,7 +280,7 @@ TRASH
       --skip-health
 
     # Assert config + workspace scaffolding.
-    workspace_dir="$HOME/zoidbergbot"
+    workspace_dir="$HOME/.zoidbergbot/workspace"
     config_path="$HOME/.zoidbergbot/zoidbergbot.json"
     sessions_dir="$HOME/.zoidbergbot/agents/main/sessions"
 

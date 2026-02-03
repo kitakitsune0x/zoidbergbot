@@ -36,8 +36,9 @@ function fakeApi(overrides: Partial<ZoidbergBotPluginApi> = {}): ZoidbergBotPlug
     id: "lobster",
     name: "lobster",
     source: "test",
-    config: {} as any,
+    config: {},
     pluginConfig: {},
+    // oxlint-disable-next-line typescript/no-explicit-any
     runtime: { version: "test" } as any,
     logger: { info() {}, warn() {}, error() {}, debug() {} },
     registerTool() {},
@@ -58,7 +59,7 @@ function fakeApi(overrides: Partial<ZoidbergBotPluginApi> = {}): ZoidbergBotPlug
 
 function fakeCtx(overrides: Partial<ZoidbergBotPluginToolContext> = {}): ZoidbergBotPluginToolContext {
   return {
-    config: {} as any,
+    config: {},
     workspaceDir: "/tmp",
     agentDir: "/tmp",
     agentId: "main",

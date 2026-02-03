@@ -63,8 +63,9 @@ export async function onboardCommand(opts: OnboardOptions, runtime: RuntimeEnv =
   if (process.platform === "win32") {
     runtime.log(
       [
-        "Windows detected.",
-        "WSL2 is strongly recommended; native Windows is untested and more problematic.",
+        "Windows detected — ZoidbergBot runs great on WSL2!",
+        "Native Windows might be trickier.",
+        "Quick setup: wsl --install (one command, one reboot)",
         "Guide: https://docs.zoidbergbot.ai/windows",
       ].join("\n"),
     );
