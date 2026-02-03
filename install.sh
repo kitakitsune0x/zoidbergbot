@@ -339,9 +339,9 @@ Usage:
   curl -fsSL https://zoidberg.bot/install.sh | bash -s -- [options]
 
 Options:
-  --install-method, --method npm|git   Install via npm (default) or from a git checkout
-  --npm                               Shortcut for --install-method npm
-  --git, --github                     Shortcut for --install-method git
+  --install-method, --method git|npm   Install from git checkout (default) or via npm
+  --git, --github                     Shortcut for --install-method git (default)
+  --npm                               Shortcut for --install-method npm (if published)
   --version <version|dist-tag>         npm install: version (default: latest)
   --beta                               Use beta if available, else latest
   --git-dir, --dir <path>             Checkout directory (default: ~/zoidbergbot)
@@ -353,7 +353,7 @@ Options:
   --help, -h                            Show this help
 
 Environment variables:
-  ZOIDBERGBOT_INSTALL_METHOD=git|npm
+  ZOIDBERGBOT_INSTALL_METHOD=git|npm   Default: git (clone from GitHub)
   ZOIDBERGBOT_VERSION=latest|next|<semver>
   ZOIDBERGBOT_BETA=0|1
   ZOIDBERGBOT_GIT_DIR=...
@@ -1133,8 +1133,8 @@ main() {
 
     if [[ -z "$INSTALL_METHOD" && -n "$detected_checkout" ]]; then
         if ! is_promptable; then
-            echo -e "${WARN}→${NC} Found a ZoidbergBot checkout, but no TTY; defaulting to npm install."
-            INSTALL_METHOD="npm"
+            echo -e "${WARN}→${NC} Found a ZoidbergBot checkout, but no TTY; using it."
+            INSTALL_METHOD="git"
         else
             local choice=""
             choice="$(prompt_choice "$(cat <<EOF
@@ -1159,7 +1159,8 @@ EOF
     fi
 
     if [[ -z "$INSTALL_METHOD" ]]; then
-        INSTALL_METHOD="npm"
+        # Default to git installation (clone from GitHub and build from source)
+        INSTALL_METHOD="git"
     fi
 
     if [[ "$INSTALL_METHOD" != "npm" && "$INSTALL_METHOD" != "git" ]]; then
