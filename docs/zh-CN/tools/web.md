@@ -91,7 +91,7 @@ Brave 提供免费额度和付费计划；请查看 Brave API 门户了解
 `~/.zoidbergbot/zoidbergbot.json` 的 `tools.web.search.apiKey` 下。
 
 **环境变量替代方案：**在 Gateway网关进程环境中设置 `BRAVE_API_KEY`。对于 Gateway网关安装，将其放入 `~/.zoidbergbot/.env`（或你的
-服务环境）。参见[环境变量](/help/faq#how-does-openclaw-load-environment-variables)。
+服务环境）。参见[环境变量](/help/faq#how-does-zoidbergbot-load-environment-variables)。
 
 ## 使用 Perplexity（直连或通过 OpenRouter）
 

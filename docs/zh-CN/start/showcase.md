@@ -356,7 +356,7 @@ ZoidbergBot 连接到 Jira，然后即时生成了一个新 Skills（在 ClawHub
   通过自然语言控制和自动化 Home Assistant 设备。
 </Card>
 
-<Card title="Nix 打包" icon="snowflake" href="https://github.com/zoidbergbot/nix-openclaw">
+<Card title="Nix 打包" icon="snowflake" href="https://github.com/zoidbergbot/nix-zoidbergbot">
   **@openclaw** • `nix` `packaging` `deployment`
   
   开箱即用的 Nix 化 ZoidbergBot 配置，实现可复现部署。

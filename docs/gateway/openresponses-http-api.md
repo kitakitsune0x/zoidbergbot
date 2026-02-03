@@ -38,11 +38,11 @@ No custom headers required: encode the agent id in the OpenResponses `model` fie
 
 Or target a specific ZoidbergBot agent by header:
 
-- `x-openclaw-agent-id: <agentId>` (default: `main`)
+- `x-zoidbergbot-agent-id: <agentId>` (default: `main`)
 
 Advanced:
 
-- `x-openclaw-session-key: <sessionKey>` to fully control session routing.
+- `x-zoidbergbot-session-key: <sessionKey>` to fully control session routing.
 
 ## Enabling the endpoint
 
@@ -295,7 +295,7 @@ Non-streaming:
 curl -sS http://127.0.0.1:18789/v1/responses \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "input": "hi"
@@ -308,7 +308,7 @@ Streaming:
 curl -N http://127.0.0.1:18789/v1/responses \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "stream": true,

@@ -8,7 +8,7 @@ ExecStart=/home/admin/zoidbergbot/scripts/auth-monitor.sh
 # Configure notification channels via environment
 Environment=WARN_HOURS=2
 # Environment=NOTIFY_PHONE=+1234567890
-# Environment=NOTIFY_NTFY=openclaw-alerts
+# Environment=NOTIFY_NTFY=zoidbergbot-alerts
 
 [Install]
 WantedBy=default.target

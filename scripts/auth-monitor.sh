@@ -7,7 +7,7 @@
 #
 # Environment variables:
 #   NOTIFY_PHONE - Phone number to send ZoidbergBot notification (e.g., +1234567890)
-#   NOTIFY_NTFY  - ntfy.sh topic for push notifications (e.g., openclaw-alerts)
+#   NOTIFY_NTFY  - ntfy.sh topic for push notifications (e.g., zoidbergbot-alerts)
 #   WARN_HOURS   - Hours before expiry to warn (default: 2)
 
 set -euo pipefail

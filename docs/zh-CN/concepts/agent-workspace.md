@@ -156,7 +156,7 @@ git push -u origin main
 
 ```bash
 gh auth login
-gh repo create openclaw-workspace --private --source . --remote origin --push
+gh repo create zoidbergbot-workspace --private --source . --remote origin --push
 ```
 
 选项 C：GitLab 网页界面

@@ -89,8 +89,8 @@ All steps can be done via the web UI at https://console.cloud.google.com
 **CLI:**
 
 ```bash
-gcloud projects create my-openclaw-project --name="ZoidbergBot Gateway"
-gcloud config set project my-openclaw-project
+gcloud projects create my-zoidbergbot-project --name="ZoidbergBot Gateway"
+gcloud config set project my-zoidbergbot-project
 ```
 
 Enable billing at https://console.cloud.google.com/billing (required for Compute Engine).
@@ -479,14 +479,14 @@ For automation or CI/CD pipelines, create a dedicated service account with minim
 1. Create a service account:
 
    ```bash
-   gcloud iam service-accounts create openclaw-deploy \
+   gcloud iam service-accounts create zoidbergbot-deploy \
      --display-name="ZoidbergBot Deployment"
    ```
 
 2. Grant Compute Instance Admin role (or narrower custom role):
    ```bash
-   gcloud projects add-iam-policy-binding my-openclaw-project \
-     --member="serviceAccount:openclaw-deploy@my-openclaw-project.iam.gserviceaccount.com" \
+   gcloud projects add-iam-policy-binding my-zoidbergbot-project \
+     --member="serviceAccount:zoidbergbot-deploy@my-zoidbergbot-project.iam.gserviceaccount.com" \
      --role="roles/compute.instanceAdmin.v1"
    ```
 

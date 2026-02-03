@@ -42,7 +42,7 @@ Getting started:
 
 ```bash
 git clone https://github.com/vignesh07/zoidbergbot-formal-models
-cd openclaw-formal-models
+cd zoidbergbot-formal-models
 
 # Java 11+ required (TLC runs on the JVM).
 # The repo vendors a pinned `tla2tools.jar` (TLA+ tools) and provides `bin/tlc` + Make targets.

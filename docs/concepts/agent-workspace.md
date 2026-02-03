@@ -171,7 +171,7 @@ Option B: GitHub CLI (`gh`)
 
 ```bash
 gh auth login
-gh repo create openclaw-workspace --private --source . --remote origin --push
+gh repo create zoidbergbot-workspace --private --source . --remote origin --push
 ```
 
 Option C: GitLab web UI

@@ -87,9 +87,9 @@ zoidbergbot gateway stop
 ```bash
 # 如果使用了配置文件或自定义路径，请调整路径
 cd ~
-tar -czf openclaw-state.tgz .openclaw
+tar -czf zoidbergbot-state.tgz .openclaw
 
-tar -czf openclaw-workspace.tgz .zoidbergbot/workspace
+tar -czf zoidbergbot-workspace.tgz .zoidbergbot/workspace
 ```
 
 如果你有多个配置文件/状态目录（例如 `~/.zoidbergbot-main`、`~/.zoidbergbot-work`），请分别归档。
@@ -196,4 +196,4 @@ zoidbergbot doctor
 
 - [Doctor](/gateway/doctor)
 - [Gateway网关故障排除](/gateway/troubleshooting)
-- [ZoidbergBot 将数据存储在哪里？](/help/faq#where-does-openclaw-store-its-data)
+- [ZoidbergBot 将数据存储在哪里？](/help/faq#where-does-zoidbergbot-store-its-data)

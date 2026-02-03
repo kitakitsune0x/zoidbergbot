@@ -58,8 +58,8 @@ export function extractHookToken(req: IncomingMessage, url: URL): HookTokenResul
     }
   }
   const headerToken =
-    typeof req.headers["x-openclaw-token"] === "string"
-      ? req.headers["x-openclaw-token"].trim()
+    typeof req.headers["x-zoidbergbot-token"] === "string"
+      ? req.headers["x-zoidbergbot-token"].trim()
       : "";
   if (headerToken) {
     return { token: headerToken, fromQuery: false };

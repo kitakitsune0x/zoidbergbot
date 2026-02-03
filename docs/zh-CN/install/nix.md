@@ -16,15 +16,15 @@ x-i18n:
 
 # Nix 安装
 
-使用 Nix 运行 ZoidbergBot 的推荐方式是通过 **[nix-openclaw](https://github.com/zoidbergbot/nix-zoidbergbot)** — 一个开箱即用的 Home Manager 模块。
+使用 Nix 运行 ZoidbergBot 的推荐方式是通过 **[nix-zoidbergbot](https://github.com/zoidbergbot/nix-zoidbergbot)** — 一个开箱即用的 Home Manager 模块。
 
 ## 快速开始
 
 将以下内容粘贴给你的 AI 智能体（Claude、Cursor 等）：
 
 ```text
-I want to set up nix-openclaw on my Mac.
-Repository: github:openclaw/nix-openclaw
+I want to set up nix-zoidbergbot on my Mac.
+Repository: github:openclaw/nix-zoidbergbot
 
 What I need you to do:
 1. Check if Determinate Nix is installed (if not, install it)
@@ -34,12 +34,12 @@ What I need you to do:
 5. Fill in the template placeholders and run home-manager switch
 6. Verify: launchd running, bot responds to messages
 
-Reference the nix-openclaw README for module options.
+Reference the nix-zoidbergbot README for module options.
 ```
 
-> **📦 完整指南：[github.com/zoidbergbot/nix-openclaw](https://github.com/zoidbergbot/nix-zoidbergbot)**
+> **📦 完整指南：[github.com/zoidbergbot/nix-zoidbergbot](https://github.com/zoidbergbot/nix-zoidbergbot)**
 >
-> nix-openclaw 仓库是 Nix 安装的权威来源。本页仅为简要概览。
+> nix-zoidbergbot 仓库是 Nix 安装的权威来源。本页仅为简要概览。
 
 ## 你将获得
 
@@ -52,7 +52,7 @@ Reference the nix-openclaw README for module options.
 
 ## Nix 模式运行时行为
 
-当设置了 `ZOIDBERGBOT_NIX_MODE=1` 时（nix-openclaw 会自动设置）：
+当设置了 `ZOIDBERGBOT_NIX_MODE=1` 时（nix-zoidbergbot 会自动设置）：
 
 ZoidbergBot 支持 **Nix 模式**，使配置具有确定性并禁用自动安装流程。
 通过导出以下环境变量启用：
@@ -98,6 +98,6 @@ apps/macos/Sources/ZoidbergBot/Resources/Info.plist
 
 ## 相关内容
 
-- [nix-openclaw](https://github.com/zoidbergbot/nix-zoidbergbot) — 完整设置指南
+- [nix-zoidbergbot](https://github.com/zoidbergbot/nix-zoidbergbot) — 完整设置指南
 - [向导](/start/wizard) — 非 Nix 的 CLI 设置
 - [Docker](/install/docker) — 容器化设置

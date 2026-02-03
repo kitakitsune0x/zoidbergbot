@@ -124,7 +124,7 @@ describe("OpenAI-compatible HTTP API (e2e)", () => {
         const res = await postChatCompletions(
           port,
           { model: "zoidbergbot", messages: [{ role: "user", content: "hi" }] },
-          { "x-openclaw-agent-id": "beta" },
+          { "x-zoidbergbot-agent-id": "beta" },
         );
         expect(res.status).toBe(200);
 
@@ -160,7 +160,7 @@ describe("OpenAI-compatible HTTP API (e2e)", () => {
             model: "zoidbergbot:beta",
             messages: [{ role: "user", content: "hi" }],
           },
-          { "x-openclaw-agent-id": "alpha" },
+          { "x-zoidbergbot-agent-id": "alpha" },
         );
         expect(res.status).toBe(200);
 
@@ -178,8 +178,8 @@ describe("OpenAI-compatible HTTP API (e2e)", () => {
           port,
           { model: "zoidbergbot", messages: [{ role: "user", content: "hi" }] },
           {
-            "x-openclaw-agent-id": "beta",
-            "x-openclaw-session-key": "agent:beta:openai:custom",
+            "x-zoidbergbot-agent-id": "beta",
+            "x-zoidbergbot-session-key": "agent:beta:openai:custom",
           },
         );
         expect(res.status).toBe(200);

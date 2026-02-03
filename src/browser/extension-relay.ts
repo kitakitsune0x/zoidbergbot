@@ -76,7 +76,7 @@ type ConnectedTarget = {
   targetInfo: TargetInfo;
 };
 
-const RELAY_AUTH_HEADER = "x-openclaw-relay-token";
+const RELAY_AUTH_HEADER = "x-zoidbergbot-relay-token";
 
 function headerValue(value: string | string[] | undefined): string | undefined {
   if (!value) {

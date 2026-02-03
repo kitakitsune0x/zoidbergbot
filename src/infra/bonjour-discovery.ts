@@ -204,7 +204,7 @@ function parseDnsSdBrowse(stdout: string): string[] {
     if (!line.includes("Add")) {
       continue;
     }
-    const match = line.match(/_openclaw-gw\._tcp\.?\s+(.+)$/);
+    const match = line.match(/_zoidbergbot-gw\._tcp\.?\s+(.+)$/);
     if (match?.[1]) {
       instances.add(decodeDnsSdEscapes(match[1].trim()));
     }
@@ -392,7 +392,7 @@ async function discoverWideAreaViaTailnetDns(
     if (!ptrName) {
       continue;
     }
-    const instanceName = ptrName.replace(/\.?_openclaw-gw\._tcp\..*$/, "");
+    const instanceName = ptrName.replace(/\.?_zoidbergbot-gw\._tcp\..*$/, "");
 
     const srv = await run(["dig", "+short", "+time=1", "+tries=1", nameserverArg, ptrName, "SRV"], {
       timeoutMs: Math.max(1, Math.min(350, budget)),

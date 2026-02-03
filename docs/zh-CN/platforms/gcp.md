@@ -96,8 +96,8 @@ gcloud auth login
 **CLI：**
 
 ```bash
-gcloud projects create my-openclaw-project --name="ZoidbergBot Gateway网关"
-gcloud config set project my-openclaw-project
+gcloud projects create my-zoidbergbot-project --name="ZoidbergBot Gateway网关"
+gcloud config set project my-zoidbergbot-project
 ```
 
 在 https://console.cloud.google.com/billing 启用计费（Compute Engine 必需）。
@@ -486,14 +486,14 @@ gcloud compute instances start zoidbergbot-gateway --zone=us-central1-a
 1. 创建服务账户：
 
    ```bash
-   gcloud iam service-accounts create openclaw-deploy \
+   gcloud iam service-accounts create zoidbergbot-deploy \
      --display-name="ZoidbergBot Deployment"
    ```
 
 2. 授予 Compute Instance Admin 角色（或更精细的自定义角色）：
    ```bash
-   gcloud projects add-iam-policy-binding my-openclaw-project \
-     --member="serviceAccount:openclaw-deploy@my-openclaw-project.iam.gserviceaccount.com" \
+   gcloud projects add-iam-policy-binding my-zoidbergbot-project \
+     --member="serviceAccount:zoidbergbot-deploy@my-zoidbergbot-project.iam.gserviceaccount.com" \
      --role="roles/compute.instanceAdmin.v1"
    ```
 

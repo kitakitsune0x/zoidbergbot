@@ -176,10 +176,10 @@ class ZoidbergBotA2UIHost extends LitElement {
       position: relative;
       box-sizing: border-box;
       padding:
-        var(--openclaw-a2ui-inset-top, 0px)
-        var(--openclaw-a2ui-inset-right, 0px)
-        var(--openclaw-a2ui-inset-bottom, 0px)
-        var(--openclaw-a2ui-inset-left, 0px);
+        var(--zoidbergbot-a2ui-inset-top, 0px)
+        var(--zoidbergbot-a2ui-inset-right, 0px)
+        var(--zoidbergbot-a2ui-inset-bottom, 0px)
+        var(--zoidbergbot-a2ui-inset-left, 0px);
     }
 
     #surfaces {
@@ -188,14 +188,14 @@ class ZoidbergBotA2UIHost extends LitElement {
       gap: 12px;
       height: 100%;
       overflow: auto;
-      padding-bottom: var(--openclaw-a2ui-scroll-pad-bottom, 0px);
+      padding-bottom: var(--zoidbergbot-a2ui-scroll-pad-bottom, 0px);
     }
 
     .status {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: var(--openclaw-a2ui-status-top, 12px);
+      top: var(--zoidbergbot-a2ui-status-top, 12px);
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -216,7 +216,7 @@ class ZoidbergBotA2UIHost extends LitElement {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: var(--openclaw-a2ui-toast-bottom, 12px);
+      bottom: var(--zoidbergbot-a2ui-toast-bottom, 12px);
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -242,7 +242,7 @@ class ZoidbergBotA2UIHost extends LitElement {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: var(--openclaw-a2ui-empty-top, var(--openclaw-a2ui-status-top, 12px));
+      top: var(--zoidbergbot-a2ui-empty-top, var(--zoidbergbot-a2ui-status-top, 12px));
       text-align: center;
       opacity: 0.8;
       padding: 10px 12px;
@@ -400,12 +400,12 @@ class ZoidbergBotA2UIHost extends LitElement {
     globalThis.__openclawLastA2UIAction = userAction;
 
     const handler =
-      globalThis.webkit?.messageHandlers?.openclawCanvasA2UIAction ??
-      globalThis.openclawCanvasA2UIAction;
+      globalThis.webkit?.messageHandlers?.zoidbergbotCanvasA2UIAction ??
+      globalThis.zoidbergbotCanvasA2UIAction;
     if (handler?.postMessage) {
       try {
         // WebKit message handlers support structured objects; Android's JS interface expects strings.
-        if (handler === globalThis.openclawCanvasA2UIAction) {
+        if (handler === globalThis.zoidbergbotCanvasA2UIAction) {
           handler.postMessage(JSON.stringify({ userAction }));
         } else {
           handler.postMessage({ userAction });

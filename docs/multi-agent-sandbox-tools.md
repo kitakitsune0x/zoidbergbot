@@ -354,7 +354,7 @@ After configuring multi-agent sandbox and tools:
 2. **Verify sandbox containers:**
 
    ```exec
-   docker ps --filter "name=openclaw-sbx-"
+   docker ps --filter "name=zoidbergbot-sbx-"
    ```
 
 3. **Test tool restrictions:**

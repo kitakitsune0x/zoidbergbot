@@ -36,7 +36,7 @@ git clone https://github.com/zoidbergbot/zoidbergbot.git
 cd openclaw
 
 # 创建新的 Fly 应用（选择你自己的名称）
-fly apps create my-openclaw
+fly apps create my-zoidbergbot
 
 # 创建持久化卷（1GB 通常足够）
 fly volumes create openclaw_data --size 1 --region iad
@@ -51,7 +51,7 @@ fly volumes create openclaw_data --size 1 --region iad
 **安全提示：** 默认配置会暴露公共 URL。如需无公网 IP 的加固部署，请参阅[私有部署](#私有部署加固)或使用 `fly.private.toml`。
 
 ```toml
-app = "my-openclaw"  # 你的应用名称
+app = "my-zoidbergbot"  # 你的应用名称
 primary_region = "iad"
 
 [build]
@@ -385,18 +385,18 @@ fly deploy -c fly.private.toml
 
 ```bash
 # 列出当前 IP
-fly ips list -a my-openclaw
+fly ips list -a my-zoidbergbot
 
 # 释放公网 IP
-fly ips release <public-ipv4> -a my-openclaw
-fly ips release <public-ipv6> -a my-openclaw
+fly ips release <public-ipv4> -a my-zoidbergbot
+fly ips release <public-ipv6> -a my-zoidbergbot
 
 # 切换到私有配置，使未来的部署不再分配公网 IP
 # （移除 [http_service] 或使用私有模板部署）
 fly deploy -c fly.private.toml
 
 # 分配仅私有的 IPv6
-fly ips allocate-v6 --private -a my-openclaw
+fly ips allocate-v6 --private -a my-zoidbergbot
 ```
 
 之后，`fly ips list` 应该只显示 `private` 类型的 IP：
@@ -414,7 +414,7 @@ v6       fdaa:x:x:x:x::x      private          global
 
 ```bash
 # 将本地端口 3000 转发到应用
-fly proxy 3000:3000 -a my-openclaw
+fly proxy 3000:3000 -a my-zoidbergbot
 
 # 然后在浏览器中打开 http://localhost:3000
 ```
@@ -432,7 +432,7 @@ fly wireguard create
 **方案 3：仅 SSH**
 
 ```bash
-fly ssh console -a my-openclaw
+fly ssh console -a my-zoidbergbot
 ```
 
 ### 私有部署中的 Webhook

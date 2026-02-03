@@ -19,7 +19,7 @@
 
 ## What is ZoidbergBot?
 
-**ZoidbergBot** is a **preconfigured, batteries-included flavor** of [ClawdBot/OpenClaw](https://github.com/openclaw/openclaw) — the powerful open-source personal AI assistant. We took everything great about ClawdBot and made it dead simple to get running.
+**ZoidbergBot** is a **preconfigured, batteries-included flavor** of [ClawdBot/ZoidbergBot](https://github.com/zoidbergbot/zoidbergbot) — the powerful open-source personal AI assistant. We took everything great about ClawdBot and made it dead simple to get running.
 
 ### Why ZoidbergBot?
 
@@ -60,7 +60,7 @@ Not everyone has time to learn Docker, debug config files, or read through docum
 
 That's ZoidbergBot. It's ClawdBot for the rest of us.
 
-We stay synced with upstream OpenClaw, so you get all the latest features and security fixes. But we wrap it in a package that prioritizes the smoothest, safest install experience possible.
+We stay synced with upstream ZoidbergBot, so you get all the latest features and security fixes. But we wrap it in a package that prioritizes the smoothest, safest install experience possible.
 
 ---
 
@@ -71,7 +71,7 @@ It answers you on the channels you already use (WhatsApp, Telegram, Slack, Disco
 
 If you want a personal, single-user assistant that feels local, fast, and always-on, this is it.
 
-**Resources:** [Upstream Docs](https://docs.openclaw.ai) · [Getting Started](https://docs.openclaw.ai/start/getting-started) · [FAQ](https://docs.openclaw.ai/start/faq) · [Discord](https://discord.gg/clawd)
+**Resources:** [Upstream Docs](https://docs.zoidbergbot.ai) · [Getting Started](https://docs.zoidbergbot.ai/start/getting-started) · [FAQ](https://docs.zoidbergbot.ai/start/faq) · [Discord](https://discord.gg/clawd)
 
 ---
 

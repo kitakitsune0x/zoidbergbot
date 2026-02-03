@@ -42,7 +42,7 @@ zoidbergbot plugins install @zoidbergbot/nostr
 使用本地检出（开发工作流）：
 
 ```bash
-zoidbergbot plugins install --link <path-to-openclaw>/extensions/nostr
+zoidbergbot plugins install --link <path-to-zoidbergbot>/extensions/nostr
 ```
 
 安装或启用插件后请重启 Gateway网关。

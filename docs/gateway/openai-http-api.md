@@ -36,11 +36,11 @@ No custom headers required: encode the agent id in the OpenAI `model` field:
 
 Or target a specific ZoidbergBot agent by header:
 
-- `x-openclaw-agent-id: <agentId>` (default: `main`)
+- `x-zoidbergbot-agent-id: <agentId>` (default: `main`)
 
 Advanced:
 
-- `x-openclaw-session-key: <sessionKey>` to fully control session routing.
+- `x-zoidbergbot-session-key: <sessionKey>` to fully control session routing.
 
 ## Enabling the endpoint
 
@@ -96,7 +96,7 @@ Non-streaming:
 curl -sS http://127.0.0.1:18789/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "messages": [{"role":"user","content":"hi"}]
@@ -109,7 +109,7 @@ Streaming:
 curl -N http://127.0.0.1:18789/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "stream": true,

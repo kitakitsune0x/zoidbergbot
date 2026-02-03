@@ -67,8 +67,8 @@ ZoidbergBot 的 Gateway网关暴露了一个简单的 HTTP 端点，用于直接
 
 为帮助群组策略解析上下文，你可以选择性地设置：
 
-- `x-openclaw-message-channel: <channel>`（示例：`slack`、`telegram`）
-- `x-openclaw-account-id: <accountId>`（当存在多个账户时）
+- `x-zoidbergbot-message-channel: <channel>`（示例：`slack`、`telegram`）
+- `x-zoidbergbot-account-id: <accountId>`（当存在多个账户时）
 
 ## 响应
 

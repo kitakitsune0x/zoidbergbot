@@ -294,7 +294,7 @@ describe("createTelegramBot", () => {
           message_id: 10,
         },
       },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
 
@@ -328,7 +328,7 @@ describe("createTelegramBot", () => {
       };
       await handler({
         message,
-        me: { username: "openclaw_bot" },
+        me: { username: "zoidbergbot_bot" },
         getFile: async () => ({ download: async () => new Uint8Array() }),
       });
 
@@ -371,7 +371,7 @@ describe("createTelegramBot", () => {
         date: 1736380800,
         from: { id: 999, username: "random" },
       },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
 
@@ -408,12 +408,12 @@ describe("createTelegramBot", () => {
 
     await handler({
       message,
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
     await handler({
       message: { ...message, text: "hello again" },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
 
@@ -428,7 +428,7 @@ describe("createTelegramBot", () => {
     const handler = getOnHandler("message") as (ctx: Record<string, unknown>) => Promise<void>;
     await handler({
       message: { chat: { id: 42, type: "private" }, text: "hi" },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
 

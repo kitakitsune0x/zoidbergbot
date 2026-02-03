@@ -69,7 +69,7 @@ jobs:
             ingress-retry session-key-stability session-explosion-bound config-normalization \
             queue-drain delivery-route-stability delivery-pipeline retry-termination retry-eventual-success \
             no-cross-stream multi-event-eventual-emission \
-            dedupe-collision-fallback crash-restart-dedupe two-worker-dedupe openclaw-session-key-conformance \
+            dedupe-collision-fallback crash-restart-dedupe two-worker-dedupe zoidbergbot-session-key-conformance \
             routing-thread-parent-channel-override routing-trirule gateway-auth-proxy-header-spoof \
             group-alias-check
 
@@ -92,7 +92,7 @@ jobs:
             ingress-retry-negative session-key-stability-negative config-normalization-negative \
             queue-drain delivery-route-stability-negative delivery-pipeline-negative retry-termination-negative retry-eventual-success-negative \
             no-cross-stream-negative multi-event-eventual-emission-negative \
-            dedupe-collision-fallback-negative crash-restart-dedupe-negative two-worker-dedupe-negative openclaw-session-key-conformance-negative \
+            dedupe-collision-fallback-negative crash-restart-dedupe-negative two-worker-dedupe-negative zoidbergbot-session-key-conformance-negative \
             routing-thread-parent-channel-override-negative routing-trirule-negative gateway-auth-proxy-header-spoof-negative
 
       - name: Upload drift diff artifact

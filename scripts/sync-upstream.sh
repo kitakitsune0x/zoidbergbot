@@ -1,5 +1,5 @@
 #!/bin/bash
-# Sync with upstream openclaw/openclaw
+# Sync with upstream openclaw/zoidbergbot
 # Usage: ./scripts/sync-upstream.sh
 
 set -e

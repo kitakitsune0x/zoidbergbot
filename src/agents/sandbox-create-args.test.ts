@@ -63,7 +63,7 @@ describe("buildSandboxCreateArgs", () => {
         "--security-opt",
         "seccomp=/tmp/seccomp.json",
         "--security-opt",
-        "apparmor=openclaw-sandbox",
+        "apparmor=zoidbergbot-sandbox",
         "--dns",
         "1.1.1.1",
         "--add-host",

@@ -1145,7 +1145,7 @@ ZoidbergBot 仅在存在 `channels.telegram` 配置段时启动 Telegram。机�
       guilds: {
         "123456789012345678": {
           // 服务器 id（推荐）或 slug
-          slug: "friends-of-openclaw",
+          slug: "friends-of-zoidbergbot",
           requireMention: false, // 每服务器默认值
           reactionNotifications: "own", // off | own | all | allowlist
           users: ["987654321098765432"], // 可选的每服务器用户白名单
@@ -3094,7 +3094,7 @@ zoidbergbot gateway --port 19001
 请求必须包含 hook token：
 
 - `Authorization: Bearer <token>` **或**
-- `x-openclaw-token: <token>` **或**
+- `x-zoidbergbot-token: <token>` **或**
 - `?token=<token>`
 
 端点：

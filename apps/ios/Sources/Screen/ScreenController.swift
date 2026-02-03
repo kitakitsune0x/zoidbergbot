@@ -387,7 +387,7 @@ private final class ScreenNavigationDelegate: NSObject, WKNavigationDelegate {
 }
 
 private final class CanvasA2UIActionMessageHandler: NSObject, WKScriptMessageHandler {
-    static let messageName = "openclawCanvasA2UIAction"
+    static let messageName = "zoidbergbotCanvasA2UIAction"
     static let handlerNames = [messageName]
 
     weak var controller: ScreenController?

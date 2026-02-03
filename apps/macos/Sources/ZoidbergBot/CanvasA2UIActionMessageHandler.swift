@@ -5,7 +5,7 @@ import Foundation
 import WebKit
 
 final class CanvasA2UIActionMessageHandler: NSObject, WKScriptMessageHandler {
-    static let messageName = "openclawCanvasA2UIAction"
+    static let messageName = "zoidbergbotCanvasA2UIAction"
     static let allMessageNames = [messageName]
 
     private let sessionKey: String

@@ -108,7 +108,7 @@ src/agents/
 ├── sandbox.ts                     # Sandbox context resolution
 ├── sandbox/                       # Sandbox subsystem
 ├── channel-tools.ts               # Channel-specific tool injection
-├── openclaw-tools.ts              # ZoidbergBot-specific tools
+├── zoidbergbot-tools.ts              # ZoidbergBot-specific tools
 ├── bash-tools.ts                  # exec/process tools
 ├── apply-patch.ts                 # apply_patch tool (OpenAI)
 ├── tools/                         # Individual tool implementations
@@ -603,10 +603,10 @@ All existing tests that cover the pi integration and its extensions:
 - `src/agents/pi-settings.test.ts`
 - `src/agents/pi-tool-definition-adapter.test.ts`
 - `src/agents/pi-tools-agent-config.test.ts`
-- `src/agents/pi-tools.create-openclaw-coding-tools.adds-claude-style-aliases-schemas-without-dropping-b.test.ts`
-- `src/agents/pi-tools.create-openclaw-coding-tools.adds-claude-style-aliases-schemas-without-dropping-d.test.ts`
-- `src/agents/pi-tools.create-openclaw-coding-tools.adds-claude-style-aliases-schemas-without-dropping-f.test.ts`
-- `src/agents/pi-tools.create-openclaw-coding-tools.adds-claude-style-aliases-schemas-without-dropping.test.ts`
+- `src/agents/pi-tools.create-zoidbergbot-coding-tools.adds-claude-style-aliases-schemas-without-dropping-b.test.ts`
+- `src/agents/pi-tools.create-zoidbergbot-coding-tools.adds-claude-style-aliases-schemas-without-dropping-d.test.ts`
+- `src/agents/pi-tools.create-zoidbergbot-coding-tools.adds-claude-style-aliases-schemas-without-dropping-f.test.ts`
+- `src/agents/pi-tools.create-zoidbergbot-coding-tools.adds-claude-style-aliases-schemas-without-dropping.test.ts`
 - `src/agents/pi-tools.policy.test.ts`
 - `src/agents/pi-tools.safe-bins.test.ts`
 - `src/agents/pi-tools.workspace-paths.test.ts`

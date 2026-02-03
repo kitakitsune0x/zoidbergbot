@@ -80,9 +80,9 @@ zoidbergbot gateway stop
 ```bash
 # Adjust paths if you use a profile or custom locations
 cd ~
-tar -czf openclaw-state.tgz .openclaw
+tar -czf zoidbergbot-state.tgz .openclaw
 
-tar -czf openclaw-workspace.tgz .zoidbergbot/workspace
+tar -czf zoidbergbot-workspace.tgz .zoidbergbot/workspace
 ```
 
 If you have multiple profiles/state dirs (e.g. `~/.zoidbergbot-main`, `~/.zoidbergbot-work`), archive each.
@@ -189,4 +189,4 @@ On the new machine, confirm:
 
 - [Doctor](/gateway/doctor)
 - [Gateway troubleshooting](/gateway/troubleshooting)
-- [Where does ZoidbergBot store its data?](/help/faq#where-does-openclaw-store-its-data)
+- [Where does ZoidbergBot store its data?](/help/faq#where-does-zoidbergbot-store-its-data)

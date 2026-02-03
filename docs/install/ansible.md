@@ -9,7 +9,7 @@ title: "Ansible"
 
 # Ansible Installation
 
-The recommended way to deploy ZoidbergBot to production servers is via **[openclaw-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible)** — an automated installer with security-first architecture.
+The recommended way to deploy ZoidbergBot to production servers is via **[zoidbergbot-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible)** — an automated installer with security-first architecture.
 
 ## Quick Start
 
@@ -21,7 +21,7 @@ curl -fsSL https://raw.githubusercontent.com/zoidbergbot/zoidbergbot-ansible/mai
 
 > **📦 Full guide: [github.com/zoidbergbot/zoidbergbot-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible)**
 >
-> The openclaw-ansible repo is the source of truth for Ansible deployment. This page is a quick overview.
+> The zoidbergbot-ansible repo is the source of truth for Ansible deployment. This page is a quick overview.
 
 ## What You Get
 
@@ -119,7 +119,7 @@ sudo apt update && sudo apt install -y ansible git
 
 # 2. Clone repository
 git clone https://github.com/zoidbergbot/zoidbergbot-ansible.git
-cd openclaw-ansible
+cd zoidbergbot-ansible
 
 # 3. Install Ansible collections
 ansible-galaxy collection install -r requirements.yml
@@ -138,7 +138,7 @@ The Ansible installer sets up ZoidbergBot for manual updates. See [Updating](/in
 To re-run the Ansible playbook (e.g., for configuration changes):
 
 ```bash
-cd openclaw-ansible
+cd zoidbergbot-ansible
 ./run-playbook.sh
 ```
 
@@ -176,7 +176,7 @@ pnpm start
 sudo systemctl status docker
 
 # Check sandbox image
-sudo docker images | grep openclaw-sandbox
+sudo docker images | grep zoidbergbot-sandbox
 
 # Build sandbox image if missing
 cd /opt/zoidbergbot/zoidbergbot
@@ -202,7 +202,7 @@ For detailed security architecture and troubleshooting:
 
 ## Related
 
-- [openclaw-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible) — full deployment guide
+- [zoidbergbot-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible) — full deployment guide
 - [Docker](/install/docker) — containerized gateway setup
 - [Sandboxing](/gateway/sandboxing) — agent sandbox configuration
 - [Multi-Agent Sandbox & Tools](/multi-agent-sandbox-tools) — per-agent isolation

@@ -199,7 +199,7 @@ x-i18n:
       dm: { enabled: true, allowFrom: ["steipete"] },
       guilds: {
         "123456789012345678": {
-          slug: "friends-of-openclaw",
+          slug: "friends-of-zoidbergbot",
           requireMention: false,
           channels: {
             general: { allow: true },
@@ -531,7 +531,7 @@ x-i18n:
     theme: "professional assistant",
   },
   agent: {
-    workspace: "~/work-openclaw",
+    workspace: "~/work-zoidbergbot",
     elevated: { enabled: false },
   },
   channels: {

@@ -60,8 +60,8 @@ If a tool is not allowed by policy, the endpoint returns **404**.
 
 To help group policies resolve context, you can optionally set:
 
-- `x-openclaw-message-channel: <channel>` (example: `slack`, `telegram`)
-- `x-openclaw-account-id: <accountId>` (when multiple accounts exist)
+- `x-zoidbergbot-message-channel: <channel>` (example: `slack`, `telegram`)
+- `x-zoidbergbot-account-id: <accountId>` (when multiple accounts exist)
 
 ## Responses
 

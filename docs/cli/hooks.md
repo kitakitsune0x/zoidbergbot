@@ -87,7 +87,7 @@ zoidbergbot hooks info session-memory
 Save session context to memory when /new command is issued
 
 Details:
-  Source: openclaw-bundled
+  Source: zoidbergbot-bundled
   Path: /path/to/zoidbergbot/hooks/bundled/session-memory/HOOK.md
   Handler: /path/to/zoidbergbot/hooks/bundled/session-memory/handler.ts
   Homepage: https://docs.zoidbergbot.ai/hooks#session-memory

@@ -35,7 +35,7 @@ zoidbergbot plugins install @zoidbergbot/nostr
 Use a local checkout (dev workflows):
 
 ```bash
-zoidbergbot plugins install --link <path-to-openclaw>/extensions/nostr
+zoidbergbot plugins install --link <path-to-zoidbergbot>/extensions/nostr
 ```
 
 Restart the Gateway after installing or enabling plugins.

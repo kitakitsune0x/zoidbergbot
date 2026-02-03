@@ -1148,7 +1148,7 @@ Multi-account support lives under `channels.discord.accounts` (see the multi-acc
       guilds: {
         "123456789012345678": {
           // guild id (preferred) or slug
-          slug: "friends-of-openclaw",
+          slug: "friends-of-zoidbergbot",
           requireMention: false, // per-guild default
           reactionNotifications: "own", // off | own | all | allowlist
           users: ["987654321098765432"], // optional per-guild user allowlist
@@ -3149,7 +3149,7 @@ Defaults:
 Requests must include the hook token:
 
 - `Authorization: Bearer <token>` **or**
-- `x-openclaw-token: <token>` **or**
+- `x-zoidbergbot-token: <token>` **or**
 - `?token=<token>`
 
 Endpoints:

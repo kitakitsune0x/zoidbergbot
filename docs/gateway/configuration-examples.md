@@ -192,7 +192,7 @@ Save to `~/.zoidbergbot/zoidbergbot.json` and you can DM the bot from that numbe
       dm: { enabled: true, allowFrom: ["steipete"] },
       guilds: {
         "123456789012345678": {
-          slug: "friends-of-openclaw",
+          slug: "friends-of-zoidbergbot",
           requireMention: false,
           channels: {
             general: { allow: true },
@@ -524,7 +524,7 @@ Save to `~/.zoidbergbot/zoidbergbot.json` and you can DM the bot from that numbe
     theme: "professional assistant",
   },
   agent: {
-    workspace: "~/work-openclaw",
+    workspace: "~/work-zoidbergbot",
     elevated: { enabled: false },
   },
   channels: {

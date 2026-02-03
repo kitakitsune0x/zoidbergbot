@@ -227,6 +227,45 @@ const CONTENT_REPLACEMENTS: Array<{ from: string; to: string }> = [
 	{ from: "openclaw)", to: "zoidbergbot)" },
 	{ from: "(openclaw", to: "(zoidbergbot" },
 
+	// Test fixtures - bot usernames
+	{ from: "openclaw_bot", to: "zoidbergbot_bot" },
+	{ from: "openclawbot", to: "zoidbergbotbot" },
+
+	// Regex patterns in tests (escaped brackets)
+	{ from: "\\\\[openclaw\\\\]", to: "\\\\[zoidbergbot\\\\]" },
+
+	// Bonjour/DNS patterns
+	{ from: "openclaw-gw", to: "zoidbergbot-gw" },
+
+	// Canvas/A2UI patterns
+	{ from: '"openclaw"', to: '"zoidbergbot"' },
+	{ from: "'openclaw'", to: "'zoidbergbot'" },
+
+	// Canvas/A2UI JavaScript globals (camelCase)
+	{ from: "openclawCanvasA2UIAction", to: "zoidbergbotCanvasA2UIAction" },
+	{ from: "openclawPostMessage", to: "zoidbergbotPostMessage" },
+	{ from: "openclawSendUserAction", to: "zoidbergbotSendUserAction" },
+	{ from: "openclawBridge", to: "zoidbergbotBridge" },
+
+	// Service names without dash
+	{ from: "openclawgw", to: "zoidbergbotgw" },
+
+	// CSS/HTML patterns (custom elements and animations)
+	{ from: "openclaw-a2ui", to: "zoidbergbot-a2ui" },
+	{ from: "openclaw-grid", to: "zoidbergbot-grid" },
+	{ from: "openclaw-glow", to: "zoidbergbot-glow" },
+	{ from: "openclaw-canvas", to: "zoidbergbot-canvas" },
+	{ from: "openclaw-status", to: "zoidbergbot-status" },
+	{ from: "<openclaw-", to: "<zoidbergbot-" },
+	{ from: "</openclaw-", to: "</zoidbergbot-" },
+
+	// Test data patterns
+	{ from: "friends-of-openclaw", to: "friends-of-zoidbergbot" },
+
+	// Remaining standalone patterns
+	{ from: "-openclaw", to: "-zoidbergbot" },
+	{ from: "openclaw-", to: "zoidbergbot-" },
+
 	// macOS test directories
 	{ from: "OpenClawIPCTests", to: "ZoidbergBotIPCTests" },
 

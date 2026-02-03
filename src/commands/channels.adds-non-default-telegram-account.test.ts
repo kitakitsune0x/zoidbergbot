@@ -424,12 +424,12 @@ describe("channels command", () => {
             accountId: "default",
             enabled: true,
             configured: true,
-            probe: { ok: true, bot: { username: "openclaw_bot" } },
+            probe: { ok: true, bot: { username: "zoidbergbot_bot" } },
           },
         ],
       },
     });
-    expect(lines.join("\n")).toMatch(/bot:@openclaw_bot/);
+    expect(lines.join("\n")).toMatch(/bot:@zoidbergbot_bot/);
   });
 
   it("surfaces Telegram group membership audit issues in channels status output", () => {

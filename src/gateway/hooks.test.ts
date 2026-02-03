@@ -43,7 +43,7 @@ describe("gateway hooks helpers", () => {
     const req = {
       headers: {
         authorization: "Bearer top",
-        "x-openclaw-token": "header",
+        "x-zoidbergbot-token": "header",
       },
     } as unknown as IncomingMessage;
     const url = new URL("http://localhost/hooks/wake?token=query");
@@ -52,7 +52,7 @@ describe("gateway hooks helpers", () => {
     expect(result1.fromQuery).toBe(false);
 
     const req2 = {
-      headers: { "x-openclaw-token": "header" },
+      headers: { "x-zoidbergbot-token": "header" },
     } as unknown as IncomingMessage;
     const result2 = extractHookToken(req2, url);
     expect(result2.token).toBe("header");

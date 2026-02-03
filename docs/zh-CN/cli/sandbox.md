@@ -79,8 +79,8 @@ zoidbergbot sandbox recreate --all --force        # 跳过确认提示
 
 ```bash
 # 拉取新镜像
-docker pull openclaw-sandbox:latest
-docker tag openclaw-sandbox:latest openclaw-sandbox:bookworm-slim
+docker pull zoidbergbot-sandbox:latest
+docker tag zoidbergbot-sandbox:latest zoidbergbot-sandbox:bookworm-slim
 
 # 更新配置以使用新镜像
 # 编辑配置：agents.defaults.sandbox.docker.image（或 agents.list[].sandbox.docker.image）

@@ -148,7 +148,7 @@ describe("OpenResponses HTTP API (e2e)", () => {
       const resHeader = await postResponses(
         port,
         { model: "zoidbergbot", input: "hi" },
-        { "x-openclaw-agent-id": "beta" },
+        { "x-zoidbergbot-agent-id": "beta" },
       );
       expect(resHeader.status).toBe(200);
       const [optsHeader] = agentCommand.mock.calls[0] ?? [];

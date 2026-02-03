@@ -290,7 +290,7 @@ Discord 到处使用数字 ID；ZoidbergBot 配置推荐使用 ID。
       guilds: {
         "*": { requireMention: true },
         "123456789012345678": {
-          slug: "friends-of-openclaw",
+          slug: "friends-of-zoidbergbot",
           requireMention: false,
           reactionNotifications: "own",
           users: ["987654321098765432", "steipete"],

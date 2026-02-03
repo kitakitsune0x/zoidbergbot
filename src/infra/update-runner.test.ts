@@ -373,7 +373,7 @@ describe("runGatewayUpdate", () => {
     cwdSpy.mockRestore();
 
     expect(result.status).toBe("error");
-    expect(result.reason).toBe("not-openclaw-root");
+    expect(result.reason).toBe("not-zoidbergbot-root");
     expect(calls.some((call) => call.includes("status --porcelain"))).toBe(false);
   });
 });

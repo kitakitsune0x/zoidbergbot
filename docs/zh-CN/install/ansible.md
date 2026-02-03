@@ -16,7 +16,7 @@ x-i18n:
 
 # Ansible 安装
 
-将 ZoidbergBot 部署到生产服务器的推荐方式是使用 **[openclaw-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible)** — 一个采用安全优先架构的自动化安装工具。
+将 ZoidbergBot 部署到生产服务器的推荐方式是使用 **[zoidbergbot-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible)** — 一个采用安全优先架构的自动化安装工具。
 
 ## 快速开始
 
@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/zoidbergbot/zoidbergbot-ansible/mai
 
 > **📦 完整指南：[github.com/zoidbergbot/zoidbergbot-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible)**
 >
-> openclaw-ansible 仓库是 Ansible 部署的权威来源。本页面仅为简要概览。
+> zoidbergbot-ansible 仓库是 Ansible 部署的权威来源。本页面仅为简要概览。
 
 ## 你将获得
 
@@ -126,7 +126,7 @@ sudo apt update && sudo apt install -y ansible git
 
 # 2. 克隆仓库
 git clone https://github.com/zoidbergbot/zoidbergbot-ansible.git
-cd openclaw-ansible
+cd zoidbergbot-ansible
 
 # 3. 安装 Ansible 集合
 ansible-galaxy collection install -r requirements.yml
@@ -145,7 +145,7 @@ Ansible 安装程序将 ZoidbergBot 设置为手动更新。标准更新流程�
 重新运行 Ansible playbook（例如配置变更时）：
 
 ```bash
-cd openclaw-ansible
+cd zoidbergbot-ansible
 ./run-playbook.sh
 ```
 
@@ -183,7 +183,7 @@ pnpm start
 sudo systemctl status docker
 
 # 检查沙箱镜像
-sudo docker images | grep openclaw-sandbox
+sudo docker images | grep zoidbergbot-sandbox
 
 # 如果缺少沙箱镜像则构建
 cd /opt/zoidbergbot/zoidbergbot
@@ -209,7 +209,7 @@ zoidbergbot channels login
 
 ## 相关内容
 
-- [openclaw-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible) — 完整部署指南
+- [zoidbergbot-ansible](https://github.com/zoidbergbot/zoidbergbot-ansible) — 完整部署指南
 - [Docker](/install/docker) — 容器化 Gateway网关设置
 - [沙箱](/gateway/sandboxing) — 智能体沙箱配置
 - [多智能体沙箱与工具](/multi-agent-sandbox-tools) — 按智能体隔离

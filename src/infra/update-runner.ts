@@ -402,7 +402,7 @@ export async function runGatewayUpdate(opts: UpdateRunnerOptions = {}): Promise<
       status: "error",
       mode: "unknown",
       root: gitRoot,
-      reason: "not-openclaw-root",
+      reason: "not-zoidbergbot-root",
       steps: [],
       durationMs: Date.now() - startedAt,
     };

@@ -395,7 +395,7 @@ scripts/sandbox-browser-setup.sh
 {
   agents: {
     defaults: {
-      sandbox: { browser: { image: "my-openclaw-browser" } },
+      sandbox: { browser: { image: "my-zoidbergbot-browser" } },
     },
   },
 }
@@ -414,14 +414,14 @@ scripts/sandbox-browser-setup.sh
 构建你自己的镜像并在配置中指向它：
 
 ```bash
-docker build -t my-openclaw-sbx -f Dockerfile.sandbox .
+docker build -t my-zoidbergbot-sbx -f Dockerfile.sandbox .
 ```
 
 ```json5
 {
   agents: {
     defaults: {
-      sandbox: { docker: { image: "my-openclaw-sbx" } },
+      sandbox: { docker: { image: "my-zoidbergbot-sbx" } },
     },
   },
 }

@@ -207,7 +207,7 @@ htop
 这些内容在重启后不会丢失。定期备份：
 
 ```bash
-tar -czvf openclaw-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
+tar -czvf zoidbergbot-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
 ```
 
 ---

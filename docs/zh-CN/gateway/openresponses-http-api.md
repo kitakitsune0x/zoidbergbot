@@ -44,11 +44,11 @@ ZoidbergBot 的 Gateway网关可以提供一个兼容 OpenResponses 的 `POST /v
 
 或通过头指定特定的 ZoidbergBot 智能体：
 
-- `x-openclaw-agent-id: <agentId>`（默认：`main`）
+- `x-zoidbergbot-agent-id: <agentId>`（默认：`main`）
 
 高级用法：
 
-- `x-openclaw-session-key: <sessionKey>` 完全控制会话路由。
+- `x-zoidbergbot-session-key: <sessionKey>` 完全控制会话路由。
 
 ## 启用端点
 
@@ -297,7 +297,7 @@ URL 获取默认值：
 curl -sS http://127.0.0.1:18789/v1/responses \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "input": "hi"
@@ -310,7 +310,7 @@ curl -sS http://127.0.0.1:18789/v1/responses \
 curl -N http://127.0.0.1:18789/v1/responses \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "stream": true,

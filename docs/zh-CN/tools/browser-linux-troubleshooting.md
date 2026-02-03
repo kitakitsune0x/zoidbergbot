@@ -100,7 +100,7 @@ RestartSec=5
 WantedBy=default.target
 ```
 
-启用命令：`systemctl --user enable --now openclaw-browser.service`
+启用命令：`systemctl --user enable --now zoidbergbot-browser.service`
 
 ### 验证浏览器是否正常工作
 

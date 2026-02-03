@@ -202,7 +202,7 @@ describe("createTelegramBot", () => {
         message_id: 42,
         message_thread_id: 99,
       },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
 
@@ -246,7 +246,7 @@ describe("createTelegramBot", () => {
         message_id: 42,
         message_thread_id: 99,
       },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     });
 
@@ -368,7 +368,7 @@ describe("createTelegramBot", () => {
         date: 1736380800,
         message_id: 42,
       },
-      me: { username: "openclaw_bot" },
+      me: { username: "zoidbergbot_bot" },
       getFile: async () => ({ download: async () => new Uint8Array() }),
     };
 

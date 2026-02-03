@@ -65,7 +65,7 @@ ZoidbergBot 同时也驱动着 ZoidbergBot 助手。
 
 <p align="center">
   <img src="/whatsapp-zoidbergbot.jpg" alt="ZoidbergBot（英文原图）" width="360" />
-  <img src="/whatsapp-openclaw-ai-zh.jpg" alt="ZoidbergBot（AI 自动翻译）" width="360" />
+  <img src="/whatsapp-zoidbergbot-ai-zh.jpg" alt="ZoidbergBot（AI 自动翻译）" width="360" />
   <br />
   <em>左：英文原图 · 右：AI 自动翻译（玩笑版）</em>
 </p>

@@ -9,15 +9,15 @@ title: "Nix"
 
 # Nix Installation
 
-The recommended way to run ZoidbergBot with Nix is via **[nix-openclaw](https://github.com/zoidbergbot/nix-zoidbergbot)** — a batteries-included Home Manager module.
+The recommended way to run ZoidbergBot with Nix is via **[nix-zoidbergbot](https://github.com/zoidbergbot/nix-zoidbergbot)** — a batteries-included Home Manager module.
 
 ## Quick Start
 
 Paste this to your AI agent (Claude, Cursor, etc.):
 
 ```text
-I want to set up nix-openclaw on my Mac.
-Repository: github:openclaw/nix-openclaw
+I want to set up nix-zoidbergbot on my Mac.
+Repository: github:openclaw/nix-zoidbergbot
 
 What I need you to do:
 1. Check if Determinate Nix is installed (if not, install it)
@@ -27,12 +27,12 @@ What I need you to do:
 5. Fill in the template placeholders and run home-manager switch
 6. Verify: launchd running, bot responds to messages
 
-Reference the nix-openclaw README for module options.
+Reference the nix-zoidbergbot README for module options.
 ```
 
-> **📦 Full guide: [github.com/zoidbergbot/nix-openclaw](https://github.com/zoidbergbot/nix-zoidbergbot)**
+> **📦 Full guide: [github.com/zoidbergbot/nix-zoidbergbot](https://github.com/zoidbergbot/nix-zoidbergbot)**
 >
-> The nix-openclaw repo is the source of truth for Nix installation. This page is just a quick overview.
+> The nix-zoidbergbot repo is the source of truth for Nix installation. This page is just a quick overview.
 
 ## What you get
 
@@ -91,6 +91,6 @@ packaging and Nix builds (which do not rely on a full Xcode toolchain).
 
 ## Related
 
-- [nix-openclaw](https://github.com/zoidbergbot/nix-zoidbergbot) — full setup guide
+- [nix-zoidbergbot](https://github.com/zoidbergbot/nix-zoidbergbot) — full setup guide
 - [Wizard](/start/wizard) — non-Nix CLI setup
 - [Docker](/install/docker) — containerized setup

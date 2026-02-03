@@ -55,7 +55,7 @@ Example secure Docker run:
 
 ```bash
 docker run --read-only --cap-drop=ALL \
-  -v openclaw-data:/app/data \
+  -v zoidbergbot-data:/app/data \
   openclaw/zoidbergbot:latest
 ```
 

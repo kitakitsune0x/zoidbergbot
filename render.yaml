@@ -16,6 +16,6 @@ services:
       - key: ZOIDBERGBOT_GATEWAY_TOKEN
         generateValue: true
     disk:
-      name: openclaw-data
+      name: zoidbergbot-data
       mountPath: /data
       sizeGB: 1

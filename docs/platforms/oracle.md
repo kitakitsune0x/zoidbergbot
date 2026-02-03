@@ -289,7 +289,7 @@ All state lives in:
 Back up periodically:
 
 ```bash
-tar -czvf openclaw-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
+tar -czvf zoidbergbot-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
 ```
 
 ---

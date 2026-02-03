@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-IMAGE_NAME="${ZOIDBERGBOT_INSTALL_E2E_IMAGE:-${CLAWDBOT_INSTALL_E2E_IMAGE:-openclaw-install-e2e:local}}"
+IMAGE_NAME="${ZOIDBERGBOT_INSTALL_E2E_IMAGE:-${CLAWDBOT_INSTALL_E2E_IMAGE:-zoidbergbot-install-e2e:local}}"
 INSTALL_URL="${ZOIDBERGBOT_INSTALL_URL:-${CLAWDBOT_INSTALL_URL:-https://zoidbergbot.bot/install.sh}}"
 
 OPENAI_API_KEY="${OPENAI_API_KEY:-}"

@@ -200,7 +200,7 @@ All state lives in:
 These survive reboots. Back them up periodically:
 
 ```bash
-tar -czvf openclaw-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
+tar -czvf zoidbergbot-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
 ```
 
 ---

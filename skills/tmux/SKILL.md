@@ -15,7 +15,7 @@ Use tmux only when you need an interactive TTY. Prefer exec background mode for 
 SOCKET_DIR="${ZOIDBERGBOT_TMUX_SOCKET_DIR:-${CLAWDBOT_TMUX_SOCKET_DIR:-${TMPDIR:-/tmp}/zoidbergbot-tmux-sockets}}"
 mkdir -p "$SOCKET_DIR"
 SOCKET="$SOCKET_DIR/zoidbergbot.sock"
-SESSION=openclaw-python
+SESSION=zoidbergbot-python
 
 tmux -S "$SOCKET" new -d -s "$SESSION" -n shell
 tmux -S "$SOCKET" send-keys -t "$SESSION":0.0 -- 'PYTHON_BASIC_REPL=1 python3 -q' Enter

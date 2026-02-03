@@ -290,7 +290,7 @@ Outbound Discord API calls retry on rate limits (429) using Discord `retry_after
       guilds: {
         "*": { requireMention: true },
         "123456789012345678": {
-          slug: "friends-of-openclaw",
+          slug: "friends-of-zoidbergbot",
           requireMention: false,
           reactionNotifications: "own",
           users: ["987654321098765432", "steipete"],

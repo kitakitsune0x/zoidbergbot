@@ -15,8 +15,8 @@ describe("canvas host", () => {
     const out = injectCanvasLiveReload("<html><body>Hello</body></html>");
     expect(out).toContain(CANVAS_WS_PATH);
     expect(out).toContain("location.reload");
-    expect(out).toContain("openclawCanvasA2UIAction");
-    expect(out).toContain("openclawSendUserAction");
+    expect(out).toContain("zoidbergbotCanvasA2UIAction");
+    expect(out).toContain("zoidbergbotSendUserAction");
   });
 
   it("creates a default index.html when missing", async () => {
@@ -35,7 +35,7 @@ describe("canvas host", () => {
       const html = await res.text();
       expect(res.status).toBe(200);
       expect(html).toContain("Interactive test page");
-      expect(html).toContain("openclawSendUserAction");
+      expect(html).toContain("zoidbergbotSendUserAction");
       expect(html).toContain(CANVAS_WS_PATH);
     } finally {
       await server.close();
@@ -230,7 +230,7 @@ describe("canvas host", () => {
       const html = await res.text();
       expect(res.status).toBe(200);
       expect(html).toContain("zoidbergbot-a2ui-host");
-      expect(html).toContain("openclawCanvasA2UIAction");
+      expect(html).toContain("zoidbergbotCanvasA2UIAction");
 
       const bundleRes = await fetch(
         `http://127.0.0.1:${server.port}/__zoidbergbot__/a2ui/a2ui.bundle.js`,

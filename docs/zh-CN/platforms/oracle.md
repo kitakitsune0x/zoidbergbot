@@ -296,7 +296,7 @@ uname -m  # 应显示 aarch64
 定期备份：
 
 ```bash
-tar -czvf openclaw-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
+tar -czvf zoidbergbot-backup.tar.gz ~/.zoidbergbot ~/.zoidbergbot/workspace
 ```
 
 ---

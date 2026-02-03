@@ -240,14 +240,14 @@ ssh youruser@192.168.64.X "zoidbergbot status"
 
 ```bash
 lume stop openclaw
-lume clone zoidbergbot openclaw-golden
+lume clone zoidbergbot zoidbergbot-golden
 ```
 
 随时重置：
 
 ```bash
 lume stop zoidbergbot && lume delete openclaw
-lume clone openclaw-golden openclaw
+lume clone zoidbergbot-golden openclaw
 lume run zoidbergbot --no-display
 ```
 

@@ -412,7 +412,7 @@ zoidbergbot browser create-profile \
   - `--format ai`（安装 Playwright 时的默认值）：返回带有数字引用（`aria-ref="<n>"`）的 AI 快照。
   - `--format aria`：返回无障碍树（无引用；仅供检查）。
   - `--efficient`（或 `--mode efficient`）：紧凑角色快照预设（交互式 + 紧凑 + 深度 + 更低的 maxChars）。
-  - 配置默认值（仅限工具/CLI）：设置 `browser.snapshotDefaults.mode: "efficient"` 以在调用者未传递模式时使用高效快照（参见 [Gateway网关配置](/gateway/configuration#browser-openclaw-managed-browser)）。
+  - 配置默认值（仅限工具/CLI）：设置 `browser.snapshotDefaults.mode: "efficient"` 以在调用者未传递模式时使用高效快照（参见 [Gateway网关配置](/gateway/configuration#browser-zoidbergbot-managed-browser)）。
   - 角色快照选项（`--interactive`、`--compact`、`--depth`、`--selector`）强制使用基于角色的快照，引用格式如 `ref=e12`。
   - `--frame "<iframe 选择器>"` 将角色快照限定在 iframe 范围内（配合角色引用如 `e12` 使用）。
   - `--interactive` 输出扁平的、易于选取的交互式元素列表（最适合驱动操作）。

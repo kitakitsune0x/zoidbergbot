@@ -43,11 +43,11 @@ ZoidbergBot 的 Gateway网关可以提供一个小型的兼容 OpenAI 的 Chat C
 
 或通过请求头指定特定的 ZoidbergBot 智能体：
 
-- `x-openclaw-agent-id: <agentId>`（默认值：`main`）
+- `x-zoidbergbot-agent-id: <agentId>`（默认值：`main`）
 
 高级用法：
 
-- `x-openclaw-session-key: <sessionKey>` 用于完全控制会话路由。
+- `x-zoidbergbot-session-key: <sessionKey>` 用于完全控制会话路由。
 
 ## 启用端点
 
@@ -103,7 +103,7 @@ ZoidbergBot 的 Gateway网关可以提供一个小型的兼容 OpenAI 的 Chat C
 curl -sS http://127.0.0.1:18789/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "messages": [{"role":"user","content":"hi"}]
@@ -116,7 +116,7 @@ curl -sS http://127.0.0.1:18789/v1/chat/completions \
 curl -N http://127.0.0.1:18789/v1/chat/completions \
   -H 'Authorization: Bearer YOUR_TOKEN' \
   -H 'Content-Type: application/json' \
-  -H 'x-openclaw-agent-id: main' \
+  -H 'x-zoidbergbot-agent-id: main' \
   -d '{
     "model": "zoidbergbot",
     "stream": true,

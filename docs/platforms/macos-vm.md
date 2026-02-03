@@ -233,14 +233,14 @@ Before customizing further, snapshot your clean state:
 
 ```bash
 lume stop openclaw
-lume clone zoidbergbot openclaw-golden
+lume clone zoidbergbot zoidbergbot-golden
 ```
 
 Reset anytime:
 
 ```bash
 lume stop zoidbergbot && lume delete openclaw
-lume clone openclaw-golden openclaw
+lume clone zoidbergbot-golden openclaw
 lume run zoidbergbot --no-display
 ```
 

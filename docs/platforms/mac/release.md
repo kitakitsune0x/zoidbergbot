@@ -50,7 +50,7 @@ scripts/create-dmg.sh dist/ZoidbergBot.app dist/ZoidbergBot-2026.2.1.dmg
 # First, create a keychain profile once:
 #   xcrun notarytool store-credentials "zoidbergbot-notary" \
 #     --apple-id "<apple-id>" --team-id "<team-id>" --password "<app-specific-password>"
-NOTARIZE=1 NOTARYTOOL_PROFILE=openclaw-notary \
+NOTARIZE=1 NOTARYTOOL_PROFILE=zoidbergbot-notary \
 BUNDLE_ID=bot.molt.mac \
 APP_VERSION=2026.2.1 \
 APP_BUILD="$(git rev-list --count HEAD)" \
