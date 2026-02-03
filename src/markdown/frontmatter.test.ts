@@ -33,7 +33,7 @@ metadata:
     expect(result.metadata).toBeDefined();
 
     const parsed = JSON5.parse(result.metadata ?? "");
-    expect(parsed.openclaw?.emoji).toBe("disk");
+    expect(parsed.zoidbergbot?.emoji).toBe("disk");
   });
 
   it("preserves inline JSON values", () => {
@@ -65,7 +65,7 @@ metadata:
     expect(result.retries).toBe("3");
     expect(JSON.parse(result.tags ?? "[]")).toEqual(["alpha", "beta"]);
     const parsed = JSON5.parse(result.metadata ?? "");
-    expect(parsed.openclaw?.events).toEqual(["command:new"]);
+    expect(parsed.zoidbergbot?.events).toEqual(["command:new"]);
   });
 
   it("returns empty when frontmatter is missing", () => {

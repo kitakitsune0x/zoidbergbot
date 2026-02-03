@@ -250,7 +250,7 @@ describe("web auto-reply", () => {
 
     // Text-based mentionPatterns still work (user can type "zoidbergbot" explicitly).
     await capturedOnMessage?.({
-      body: "openclaw ping",
+      body: "zoidbergbot ping",
       from: "123@g.us",
       conversationId: "123@g.us",
       chatId: "123@g.us",

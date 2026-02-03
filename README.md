@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>"Why not Zoidberg?"</strong>
+  <strong>"Dr. John A. Zoidberg"</strong>
 </p>
 
 <p align="center">

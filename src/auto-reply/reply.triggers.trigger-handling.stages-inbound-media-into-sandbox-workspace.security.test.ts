@@ -26,7 +26,7 @@ afterEach(() => {
 describe("stageSandboxMedia security", () => {
   it("rejects staging host files from outside the media directory", async () => {
     await withTempHome(async (home) => {
-      // Sensitive host file outside .openclaw
+      // Sensitive host file outside .zoidbergbot
       const sensitiveFile = join(home, "secrets.txt");
       await fs.writeFile(sensitiveFile, "SENSITIVE DATA");
 

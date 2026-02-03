@@ -89,7 +89,7 @@ describe("workspace path resolution", () => {
           });
 
           const updated = await fs.readFile(path.join(workspaceDir, testFile), "utf8");
-          expect(updated).toBe("hello openclaw");
+          expect(updated).toBe("hello zoidbergbot");
         } finally {
           process.chdir(prevCwd);
         }

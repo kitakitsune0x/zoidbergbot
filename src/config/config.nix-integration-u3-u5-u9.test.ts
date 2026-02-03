@@ -38,7 +38,7 @@ describe("Nix integration (U3, U5, U9)", () => {
     it("STATE_DIR defaults to ~/.zoidbergbot when env not set", async () => {
       await withEnvOverride({ ZOIDBERGBOT_STATE_DIR: undefined }, async () => {
         const { STATE_DIR } = await import("./config.js");
-        expect(STATE_DIR).toMatch(/\.openclaw$/);
+        expect(STATE_DIR).toMatch(/\.zoidbergbot$/);
       });
     });
 
@@ -51,10 +51,13 @@ describe("Nix integration (U3, U5, U9)", () => {
 
     it("CONFIG_PATH defaults to ~/.zoidbergbot/zoidbergbot.json when env not set", async () => {
       await withEnvOverride(
-        { ZOIDBERGBOT_CONFIG_PATH: undefined, ZOIDBERGBOT_STATE_DIR: undefined },
+        {
+          ZOIDBERGBOT_CONFIG_PATH: undefined,
+          ZOIDBERGBOT_STATE_DIR: undefined,
+        },
         async () => {
           const { CONFIG_PATH } = await import("./config.js");
-          expect(CONFIG_PATH).toMatch(/\.openclaw[\\/]openclaw\.json$/);
+          expect(CONFIG_PATH).toMatch(/\.zoidbergbot[\\/]zoidbergbot\.json$/);
         },
       );
     });
@@ -112,7 +115,11 @@ describe("Nix integration (U3, U5, U9)", () => {
           JSON.stringify(
             {
               id: "demo-plugin",
-              configSchema: { type: "object", additionalProperties: false, properties: {} },
+              configSchema: {
+                type: "object",
+                additionalProperties: false,
+                properties: {},
+              },
             },
             null,
             2,
