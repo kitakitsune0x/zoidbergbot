@@ -81,7 +81,7 @@ beforeEach(() => {
     },
     session: { mainKey: "main" },
     messages: {
-      groupChat: { mentionPatterns: ["@openclaw"] },
+      groupChat: { mentionPatterns: ["@zoidbergbot"] },
     },
   };
   requestMock.mockReset().mockImplementation((method: string) => {
@@ -222,7 +222,7 @@ describe("monitorIMessageProvider", () => {
           chat_id: 123,
           sender: "+15550001111",
           is_from_me: false,
-          text: "@openclaw hello",
+          text: "@zoidbergbot hello",
           is_group: true,
         },
       },
@@ -367,7 +367,7 @@ describe("monitorIMessageProvider", () => {
           chat_id: 42,
           sender: "+15550002222",
           is_from_me: false,
-          text: "@openclaw ping",
+          text: "@zoidbergbot ping",
           is_group: true,
           chat_name: "Lobster Squad",
           participants: ["+1555", "+1556"],
@@ -416,7 +416,7 @@ describe("monitorIMessageProvider", () => {
           chat_id: 202,
           sender: "+15550003333",
           is_from_me: false,
-          text: "@openclaw hi",
+          text: "@zoidbergbot hi",
           is_group: true,
         },
       },
@@ -451,7 +451,7 @@ describe("monitorIMessageProvider", () => {
           chat_id: 303,
           sender: "+15550003333",
           is_from_me: false,
-          text: "@openclaw hi",
+          text: "@zoidbergbot hi",
           is_group: true,
         },
       },
@@ -477,7 +477,7 @@ describe("monitorIMessageProvider", () => {
           chat_name: "Test Group",
           sender: "+15550001111",
           is_from_me: false,
-          text: "@openclaw hi",
+          text: "@zoidbergbot hi",
           is_group: true,
           created_at: "2026-01-17T00:00:00Z",
         },
@@ -492,7 +492,7 @@ describe("monitorIMessageProvider", () => {
     const ctx = replyMock.mock.calls[0]?.[0];
     const body = ctx?.Body ?? "";
     expect(body).toContain("Test Group id:99");
-    expect(body).toContain("+15550001111: @openclaw hi");
+    expect(body).toContain("+15550001111: @zoidbergbot hi");
   });
 
   it("includes reply context when imessage reply metadata is present", async () => {

@@ -6,7 +6,7 @@ describe("matchesMentionWithExplicit", () => {
 
   it("checks mentionPatterns even when explicit mention is available", () => {
     const result = matchesMentionWithExplicit({
-      text: "@openclaw hello",
+      text: "@zoidbergbot hello",
       mentionRegexes,
       explicit: {
         hasAnyMention: true,

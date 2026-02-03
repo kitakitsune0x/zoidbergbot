@@ -166,7 +166,7 @@ ZoidbergBot 默认提供了良好的助手设置，但你通常会想要调整�
   },
   routing: {
     groupChat: {
-      mentionPatterns: ["@openclaw", "zoidbergbot"],
+      mentionPatterns: ["@zoidbergbot", "zoidbergbot"],
     },
   },
   session: {

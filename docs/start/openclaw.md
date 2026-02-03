@@ -159,7 +159,7 @@ Example:
   },
   routing: {
     groupChat: {
-      mentionPatterns: ["@openclaw", "zoidbergbot"],
+      mentionPatterns: ["@zoidbergbot", "zoidbergbot"],
     },
   },
   session: {

@@ -126,7 +126,7 @@ describe("web auto-reply", () => {
 
     setLoadConfigMock(() => ({
       messages: {
-        groupChat: { mentionPatterns: ["@openclaw"] },
+        groupChat: { mentionPatterns: ["@zoidbergbot"] },
       },
       session: { store: storePath },
     }));
@@ -209,7 +209,7 @@ describe("web auto-reply", () => {
       },
       messages: {
         groupChat: {
-          mentionPatterns: ["\\bopenclaw\\b"],
+          mentionPatterns: ["\\bzoidbergbot\\b"],
         },
       },
     }));

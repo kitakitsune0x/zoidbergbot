@@ -201,7 +201,7 @@ describe("web auto-reply", () => {
           groups: { "*": { requireMention: false } },
         },
       },
-      messages: { groupChat: { mentionPatterns: ["@openclaw"] } },
+      messages: { groupChat: { mentionPatterns: ["@zoidbergbot"] } },
     }));
 
     let capturedOnMessage:
@@ -249,7 +249,7 @@ describe("web auto-reply", () => {
           groups: { "999@g.us": { requireMention: false } },
         },
       },
-      messages: { groupChat: { mentionPatterns: ["@openclaw"] } },
+      messages: { groupChat: { mentionPatterns: ["@zoidbergbot"] } },
     }));
 
     let capturedOnMessage:
@@ -266,7 +266,7 @@ describe("web auto-reply", () => {
     expect(capturedOnMessage).toBeDefined();
 
     await capturedOnMessage?.({
-      body: "@openclaw hello",
+      body: "@zoidbergbot hello",
       from: "123@g.us",
       conversationId: "123@g.us",
       chatId: "123@g.us",
@@ -302,7 +302,7 @@ describe("web auto-reply", () => {
           },
         },
       },
-      messages: { groupChat: { mentionPatterns: ["@openclaw"] } },
+      messages: { groupChat: { mentionPatterns: ["@zoidbergbot"] } },
     }));
 
     let capturedOnMessage:

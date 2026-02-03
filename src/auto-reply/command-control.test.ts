@@ -217,7 +217,7 @@ describe("control command parsing", () => {
       }),
     ).toBe(false);
     expect(
-      hasControlCommand("/help@openclaw", undefined, {
+      hasControlCommand("/help@zoidbergbot", undefined, {
         botUsername: "zoidbergbot",
       }),
     ).toBe(true);

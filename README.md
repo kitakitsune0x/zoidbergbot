@@ -524,7 +524,7 @@ by Peter Steinberger and the community.
 - [zoidbergbot.ai](https://zoidbergbot.ai)
 - [soul.md](https://soul.md)
 - [steipete.me](https://steipete.me)
-- [@openclaw](https://x.com/zoidbergbot)
+- [@zoidbergbot](https://x.com/zoidbergbot)
 
 ## Community
 

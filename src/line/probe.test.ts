@@ -39,7 +39,7 @@ describe("probeLineBot", () => {
     getBotInfoMock.mockResolvedValue({
       displayName: "ZoidbergBot",
       userId: "U123",
-      basicId: "@openclaw",
+      basicId: "@zoidbergbot",
       pictureUrl: "https://example.com/bot.png",
     });
 

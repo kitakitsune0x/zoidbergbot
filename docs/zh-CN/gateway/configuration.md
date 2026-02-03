@@ -136,7 +136,7 @@ scripts/sandbox-setup.sh
     list: [
       {
         id: "main",
-        groupChat: { mentionPatterns: ["@openclaw", "reisponde"] },
+        groupChat: { mentionPatterns: ["@zoidbergbot", "reisponde"] },
       },
     ],
   },
@@ -606,7 +606,7 @@ ZoidbergBot 在以下位置存储**每个智能体的**认证配置文件（OAut
     groupChat: { historyLimit: 50 },
   },
   agents: {
-    list: [{ id: "main", groupChat: { mentionPatterns: ["@openclaw", "zoidbergbot"] } }],
+    list: [{ id: "main", groupChat: { mentionPatterns: ["@zoidbergbot", "zoidbergbot"] } }],
   },
 }
 ```
@@ -670,7 +670,7 @@ ZoidbergBot 在以下位置存储**每个智能体的**认证配置文件（OAut
         id: "main",
         groupChat: {
           // 仅这些文本模式会触发响应
-          mentionPatterns: ["reisponde", "@openclaw"],
+          mentionPatterns: ["reisponde", "@zoidbergbot"],
         },
       },
     ],

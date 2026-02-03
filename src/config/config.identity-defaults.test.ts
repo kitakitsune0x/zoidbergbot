@@ -131,7 +131,7 @@ describe("config identity defaults", () => {
                     theme: "space lobster",
                     emoji: "🦞",
                   },
-                  groupChat: { mentionPatterns: ["@openclaw"] },
+                  groupChat: { mentionPatterns: ["@zoidbergbot"] },
                 },
               ],
             },
@@ -150,7 +150,7 @@ describe("config identity defaults", () => {
       const cfg = loadConfig();
 
       expect(cfg.messages?.responsePrefix).toBe("✅");
-      expect(cfg.agents?.list?.[0]?.groupChat?.mentionPatterns).toEqual(["@openclaw"]);
+      expect(cfg.agents?.list?.[0]?.groupChat?.mentionPatterns).toEqual(["@zoidbergbot"]);
     });
   });
 

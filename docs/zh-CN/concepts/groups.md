@@ -236,7 +236,7 @@ otherwise -> reply
       {
         id: "main",
         groupChat: {
-          mentionPatterns: ["@openclaw", "zoidbergbot", "\\+15555550123"],
+          mentionPatterns: ["@zoidbergbot", "zoidbergbot", "\\+15555550123"],
           historyLimit: 50,
         },
       },

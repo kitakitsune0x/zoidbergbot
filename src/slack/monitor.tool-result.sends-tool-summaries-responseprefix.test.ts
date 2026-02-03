@@ -365,7 +365,7 @@ describe("monitorSlackProvider tool results", () => {
     slackTestState.config = {
       messages: {
         responsePrefix: "PFX",
-        groupChat: { mentionPatterns: ["\\bopenclaw\\b"] },
+        groupChat: { mentionPatterns: ["\\bzoidbergbot\\b"] },
       },
       channels: {
         slack: {
@@ -412,7 +412,7 @@ describe("monitorSlackProvider tool results", () => {
     slackTestState.config = {
       messages: {
         responsePrefix: "PFX",
-        groupChat: { mentionPatterns: ["\\bopenclaw\\b"] },
+        groupChat: { mentionPatterns: ["\\bzoidbergbot\\b"] },
       },
       channels: {
         slack: {

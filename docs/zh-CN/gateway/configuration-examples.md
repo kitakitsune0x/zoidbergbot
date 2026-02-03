@@ -113,7 +113,7 @@ x-i18n:
   // 路由 + 队列
   routing: {
     groupChat: {
-      mentionPatterns: ["@openclaw", "zoidbergbot"],
+      mentionPatterns: ["@zoidbergbot", "zoidbergbot"],
       historyLimit: 50,
     },
     queue: {

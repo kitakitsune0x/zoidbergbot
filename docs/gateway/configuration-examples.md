@@ -106,7 +106,7 @@ Save to `~/.zoidbergbot/zoidbergbot.json` and you can DM the bot from that numbe
   // Routing + queue
   routing: {
     groupChat: {
-      mentionPatterns: ["@openclaw", "zoidbergbot"],
+      mentionPatterns: ["@zoidbergbot", "zoidbergbot"],
       historyLimit: 50,
     },
     queue: {

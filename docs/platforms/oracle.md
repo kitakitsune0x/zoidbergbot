@@ -94,7 +94,7 @@ Verify:
 tailscale status
 ```
 
-**From now on, connect via Tailscale:** `ssh ubuntu@openclaw` (or use the Tailscale IP).
+**From now on, connect via Tailscale:** `ssh ubuntu@zoidbergbot` (or use the Tailscale IP).
 
 ## 5) Install ZoidbergBot
 
@@ -219,7 +219,7 @@ If Tailscale Serve isn't working, use an SSH tunnel:
 
 ```bash
 # From your local machine (via Tailscale)
-ssh -L 18789:127.0.0.1:18789 ubuntu@openclaw
+ssh -L 18789:127.0.0.1:18789 ubuntu@zoidbergbot
 ```
 
 Then open `http://localhost:18789`.

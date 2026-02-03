@@ -103,7 +103,7 @@ Molty：_龙虾式的尴尬_
 
 然后混乱开始了。
 
-**账号抢注者：** Twitter 改名后的几秒钟内，自动化机器人就抢注了 @openclaw。抢注者立即发布了一个加密货币钱包地址。Peter 联系了他在 X 的关系。
+**账号抢注者：** Twitter 改名后的几秒钟内，自动化机器人就抢注了 @zoidbergbot。抢注者立即发布了一个加密货币钱包地址。Peter 联系了他在 X 的关系。
 
 **GitHub 灾难：** Peter 在慌乱中不小心重命名了他的个人 GitHub 账号。机器人在几分钟内抢注了 `steipete`。不得不联系 GitHub 的高级副总裁。
 
@@ -124,7 +124,7 @@ Moltbot 念起来始终不太顺口。于是，在格林尼治时间凌晨 4 点
 仅仅 3 小时内：
 
 - GitHub 改名完成：`github.com/zoidbergbot/zoidbergbot` ✅
-- X 账号 `@openclaw` 到手，带金色认证徽章 💰
+- X 账号 `@zoidbergbot` 到手，带金色认证徽章 💰
 - npm 包以新名称发布
 - 文档迁移到 `docs.zoidbergbot.ai`
 - 公告在 90 分钟内获得超过 20 万次浏览

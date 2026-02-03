@@ -355,8 +355,8 @@ Known issue: When you send an image with ONLY a mention (no other text), WhatsAp
 
 **Workaround:** Add some text with the mention:
 
-- ❌ `@openclaw` + image
-- ✅ `@openclaw check this` + image
+- ❌ `@zoidbergbot` + image
+- ✅ `@zoidbergbot check this` + image
 
 ### Session Not Resuming
 

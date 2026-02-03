@@ -73,7 +73,7 @@ describe("discord tool result dispatch", () => {
       },
       messages: {
         responsePrefix: "PFX",
-        groupChat: { mentionPatterns: ["\\bopenclaw\\b"] },
+        groupChat: { mentionPatterns: ["\\bzoidbergbot\\b"] },
       },
     } as ReturnType<typeof import("../config/config.js").loadConfig>;
 
@@ -153,7 +153,7 @@ describe("discord tool result dispatch", () => {
       },
       messages: {
         responsePrefix: "PFX",
-        groupChat: { mentionPatterns: ["\\bopenclaw\\b"] },
+        groupChat: { mentionPatterns: ["\\bzoidbergbot\\b"] },
       },
     } as ReturnType<typeof import("../config/config.js").loadConfig>;
 

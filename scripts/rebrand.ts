@@ -266,6 +266,12 @@ const CONTENT_REPLACEMENTS: Array<{ from: string; to: string }> = [
 	{ from: "-openclaw", to: "-zoidbergbot" },
 	{ from: "openclaw-", to: "zoidbergbot-" },
 
+	// Regex patterns with word boundaries
+	{ from: "\\\\bopenclaw\\\\b", to: "\\\\bzoidbergbot\\\\b" },
+
+	// @ mention patterns
+	{ from: "@openclaw", to: "@zoidbergbot" },
+
 	// macOS test directories
 	{ from: "OpenClawIPCTests", to: "ZoidbergBotIPCTests" },
 

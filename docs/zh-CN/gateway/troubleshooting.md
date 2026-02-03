@@ -361,8 +361,8 @@ zoidbergbot logs --follow | grep "pairing request"
 
 **解决方法：** 在提及时添加一些文本：
 
-- ❌ `@openclaw` + 图片
-- ✅ `@openclaw check this` + 图片
+- ❌ `@zoidbergbot` + 图片
+- ✅ `@zoidbergbot check this` + 图片
 
 ### 会话未恢复
 

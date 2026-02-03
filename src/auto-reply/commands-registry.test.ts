@@ -146,9 +146,9 @@ describe("commands registry", () => {
   });
 
   it("normalizes telegram-style command mentions for the current bot", () => {
-    expect(normalizeCommandBody("/help@openclaw", { botUsername: "zoidbergbot" })).toBe("/help");
+    expect(normalizeCommandBody("/help@zoidbergbot", { botUsername: "zoidbergbot" })).toBe("/help");
     expect(
-      normalizeCommandBody("/help@openclaw args", {
+      normalizeCommandBody("/help@zoidbergbot args", {
         botUsername: "zoidbergbot",
       }),
     ).toBe("/help args");

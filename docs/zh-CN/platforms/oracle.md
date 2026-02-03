@@ -101,7 +101,7 @@ sudo tailscale up --ssh --hostname=openclaw
 tailscale status
 ```
 
-**从现在开始，通过 Tailscale 连接：** `ssh ubuntu@openclaw`（或使用 Tailscale IP）。
+**从现在开始，通过 Tailscale 连接：** `ssh ubuntu@zoidbergbot`（或使用 Tailscale IP）。
 
 ## 5) 安装 ZoidbergBot
 
@@ -226,7 +226,7 @@ sudo systemctl disable --now ssh
 
 ```bash
 # 从本地机器（通过 Tailscale）
-ssh -L 18789:127.0.0.1:18789 ubuntu@openclaw
+ssh -L 18789:127.0.0.1:18789 ubuntu@zoidbergbot
 ```
 
 然后打开 `http://localhost:18789`。

@@ -16,7 +16,7 @@ x-i18n:
 来自社区的真实项目。看看大家正在用 ZoidbergBot 构建什么。
 
 <Info>
-**想要展示你的项目？** 在 [Discord 的 #showcase 频道](https://discord.gg/clawd) 分享你的项目，或在 [X 上 @openclaw](https://x.com/zoidbergbot)。
+**想要展示你的项目？** 在 [Discord 的 #showcase 频道](https://discord.gg/clawd) 分享你的项目，或在 [X 上 @zoidbergbot](https://x.com/zoidbergbot)。
 </Info>
 
 ## 🎥 ZoidbergBot 实战演示
@@ -104,7 +104,7 @@ OpenCode 完成修改 → 提交 PR → ZoidbergBot 审查差异并在 Telegram 
 <Card title="几分钟内创建酒窖 Skills" icon="wine-glass" href="https://x.com/i/status/2010916352454791216">
   **@prades_maxime** • `skills` `local` `csv`
 
-让"Robby"（@openclaw）创建一个本地酒窖 Skills。它请求一个 CSV 导出样本和存储位置，然后快速构建并测试 Skills（示例中有 962 瓶酒）。
+让"Robby"（@zoidbergbot）创建一个本地酒窖 Skills。它请求一个 CSV 导出样本和存储位置，然后快速构建并测试 Skills（示例中有 962 瓶酒）。
 
   <img src="/assets/showcase/wine-cellar-skill.jpg" alt="ZoidbergBot 从 CSV 构建本地酒窖 Skills" />
 </Card>
@@ -357,7 +357,7 @@ ZoidbergBot 连接到 Jira，然后即时生成了一个新 Skills（在 ClawHub
 </Card>
 
 <Card title="Nix 打包" icon="snowflake" href="https://github.com/zoidbergbot/nix-zoidbergbot">
-  **@openclaw** • `nix` `packaging` `deployment`
+  **@zoidbergbot** • `nix` `packaging` `deployment`
   
   开箱即用的 Nix 化 ZoidbergBot 配置，实现可复现部署。
 </Card>
@@ -412,7 +412,7 @@ ZoidbergBot 连接到 Jira，然后即时生成了一个新 Skills（在 ClawHub
 
 <Steps>
   <Step title="分享它">
-    发布到 [Discord 的 #showcase 频道](https://discord.gg/clawd) 或 [在推特上 @openclaw](https://x.com/zoidbergbot)
+    发布到 [Discord 的 #showcase 频道](https://discord.gg/clawd) 或 [在推特上 @zoidbergbot](https://x.com/zoidbergbot)
   </Step>
   <Step title="提供详细信息">
     告诉我们它的功能，附上仓库/演示链接，如果有的话分享一张截图

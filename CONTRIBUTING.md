@@ -6,7 +6,7 @@ Welcome to the lobster tank! 🦞
 
 - **GitHub:** https://github.com/zoidbergbot/zoidbergbot
 - **Discord:** https://discord.gg/qkhbAGHRBT
-- **X/Twitter:** [@steipete](https://x.com/steipete) / [@openclaw](https://x.com/zoidbergbot)
+- **X/Twitter:** [@steipete](https://x.com/steipete) / [@zoidbergbot](https://x.com/zoidbergbot)
 
 ## Maintainers
 

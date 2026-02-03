@@ -127,7 +127,7 @@ ZoidbergBot 拥有三个 Vitest 测试套件（单元/集成、端到端、实�
   - 将"提供商 API 故障/密钥无效"与"Gateway网关智能体管道故障"分离
   - 包含小型、隔离的回归测试（示例：OpenAI Responses/Codex Responses 推理重放 + 工具调用流程）
 
-### 第二层：Gateway网关 + 开发智能体冒烟测试（"@openclaw"实际做什么）
+### 第二层：Gateway网关 + 开发智能体冒烟测试（"@zoidbergbot"实际做什么）
 
 - 测试：`src/gateway/gateway-models.profiles.live.test.ts`
 - 目标：

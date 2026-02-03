@@ -189,7 +189,7 @@ zoidbergbot message send --target +15555550123 --message "Hello from ZoidbergBot
       groups: { "*": { requireMention: true } },
     },
   },
-  messages: { groupChat: { mentionPatterns: ["@openclaw"] } },
+  messages: { groupChat: { mentionPatterns: ["@zoidbergbot"] } },
 }
 ```
 

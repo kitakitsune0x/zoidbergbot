@@ -9,7 +9,7 @@ summary: "Community-built projects and integrations powered by ZoidbergBot"
 Real projects from the community. See what people are building with ZoidbergBot.
 
 <Info>
-**Want to be featured?** Share your project in [#showcase on Discord](https://discord.gg/clawd) or [tag @openclaw on X](https://x.com/zoidbergbot).
+**Want to be featured?** Share your project in [#showcase on Discord](https://discord.gg/clawd) or [tag @zoidbergbot on X](https://x.com/zoidbergbot).
 </Info>
 
 ## 🎥 ZoidbergBot in Action
@@ -350,7 +350,7 @@ Multi-lingual audio transcription via OpenRouter (Gemini, etc). Available on Cla
 </Card>
 
 <Card title="Nix Packaging" icon="snowflake" href="https://github.com/zoidbergbot/nix-zoidbergbot">
-  **@openclaw** • `nix` `packaging` `deployment`
+  **@zoidbergbot** • `nix` `packaging` `deployment`
   
   Batteries-included nixified ZoidbergBot configuration for reproducible deployments.
 </Card>
@@ -405,7 +405,7 @@ Have something to share? We'd love to feature it!
 
 <Steps>
   <Step title="Share It">
-    Post in [#showcase on Discord](https://discord.gg/clawd) or [tweet @openclaw](https://x.com/zoidbergbot)
+    Post in [#showcase on Discord](https://discord.gg/clawd) or [tweet @zoidbergbot](https://x.com/zoidbergbot)
   </Step>
   <Step title="Include Details">
     Tell us what it does, link to the repo/demo, share a screenshot if you have one

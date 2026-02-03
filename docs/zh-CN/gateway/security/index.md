@@ -500,7 +500,7 @@ Doctor 可以为你生成一个：`zoidbergbot doctor --generate-gateway-token`�
     "list": [
       {
         "id": "main",
-        "groupChat": { "mentionPatterns": ["@openclaw", "@mybot"] }
+        "groupChat": { "mentionPatterns": ["@zoidbergbot", "@mybot"] }
       }
     ]
   }
